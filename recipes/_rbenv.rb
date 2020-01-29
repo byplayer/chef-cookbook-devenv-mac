@@ -5,9 +5,6 @@ node['rbenv']['rubies'].each do |version, gems|
     if [ $RES -eq 0 ]; then
       exit 0
     fi
-
-    rbenv install #{version}
-    rbenv shell #{version}
   EOH
 
   gems ||= []
