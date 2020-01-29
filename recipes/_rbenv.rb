@@ -11,6 +11,8 @@ node['rbenv']['rubies'].each do |version, gems|
     rbenv shell #{version}
   EOH
 
+  cmd = "echo test"
+
   gems ||= []
   gems.each do |gem|
     cmd << "gem install #{gem}\n"
