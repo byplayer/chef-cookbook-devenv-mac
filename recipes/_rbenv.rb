@@ -1,5 +1,6 @@
 node['rbenv']['rubies'].each do |version, gems|
   cmd = <<-EOH
+    sudo -H #{node['rbenv']['user']}
     eval "$(rbenv init -)" || true
     rbenv versions | grep #{version} > /dev/null
     RES=$?
@@ -11,8 +12,6 @@ node['rbenv']['rubies'].each do |version, gems|
     rbenv shell #{version}
   EOH
 
-  cmd = "echo test"
-
   gems ||= []
   gems.each do |gem|
     cmd << "gem install #{gem}\n"
@@ -20,7 +19,6 @@ node['rbenv']['rubies'].each do |version, gems|
 
   bash "install ruby(#{version}) by rbenv" do
     environment({'HOME' => "/Users/#{node['rbenv']['user']}"})
-    user node['rbenv']['user']
     code cmd
   end
 end
