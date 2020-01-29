@@ -3,6 +3,10 @@
 # Recipe:: default
 #
 # Copyright:: 2020, The Authors, All Rights Reserved.
-%w[homebrew].each do |cookbook|
+%w[
+  homebrew
+  homebrew::install_formulas
+  devenv-mac::_homebrew
+].each do |cookbook|
   include_recipe cookbook
 end
