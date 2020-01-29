@@ -1,10 +1,14 @@
 node['rbenv']['rubies'].each do |version, gems|
   cmd = <<-EOH
     eval "$(rbenv init -)"
-    RES=$(rbenv versions | grep #{version})
+    rbenv versions | grep #{version} > /dev/null
+    RES=$?
     if [ $RES -eq 0 ]; then
       exit 0
     fi
+
+    rbenv install #{version}
+    rbenv shell #{version}
   EOH
 
   gems ||= []
