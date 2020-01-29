@@ -1,7 +1,7 @@
 default['homebrew']['owner'] = 'brew_owner'
 default['homebrew']['formulas'] =
   %w(binutils cmake cmigemo coreutils diffutils findutils fzf
-     git gpg highlight install pinentry-mac the_silver_searcher rbenv)
+     git gpg highlight pinentry-mac the_silver_searcher rbenv)
 default['homebrew']['casks'] = %w(emacs)
 
 default['devenv']['user'] = 'user'
