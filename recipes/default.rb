@@ -7,6 +7,7 @@
   homebrew
   homebrew::install_formulas
   devenv-mac::_homebrew
+  devenv-mac::_devenv
 ].each do |cookbook|
   include_recipe cookbook
 end
