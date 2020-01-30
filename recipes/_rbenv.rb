@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 node['rbenv']['rubies'].each do |version, gems|
   cmd = <<-EOH
     sudo -H #{node['rbenv']['user']}
