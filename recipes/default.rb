@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Cookbook:: devenv-mac
 # Recipe:: default
@@ -7,8 +9,8 @@
   homebrew
   homebrew::install_formulas
   devenv-mac::_homebrew
-  devenv-mac::_devenv
   devenv-mac::_rbenv
+  devenv-mac::_devenv
 ].each do |cookbook|
   include_recipe cookbook
 end

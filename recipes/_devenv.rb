@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 devenv_user_home = "/Users/#{node['devenv']['user']}"
 %w[.zsh.d
    .emacs.d
@@ -16,3 +18,11 @@ devenv_user_home = "/Users/#{node['devenv']['user']}"
   end
 end
 
+bash 'install ruby_tool' do
+  environment('HOME' => "/Users/#{node['rbenv']['user']}")
+  code <<-EOH
+    sudo -H #{node['rbenv']['user']}
+    cd ~/.ruby_tool
+    ./install.sh
+  EOH
+end
