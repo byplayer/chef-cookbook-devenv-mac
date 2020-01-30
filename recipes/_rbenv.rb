@@ -2,7 +2,7 @@
 
 node['rbenv']['rubies'].each do |version, gems|
   cmd = <<-EOH
-    sudo -H #{node['rbenv']['user']}
+    sudo -H su #{node['rbenv']['user']}
     eval "$(rbenv init -)" || true
     rbenv versions | grep #{version} > /dev/null
     RES=$?
