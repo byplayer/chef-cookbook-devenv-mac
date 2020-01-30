@@ -1,8 +1,11 @@
+# frozen_string_literal: true
+
 default['homebrew']['owner'] = 'brew_owner'
+default['homebrew']['taps'] = %w[d12frosted/emacs-plus]
 default['homebrew']['formulas'] =
-  %w(binutils cmake cmigemo coreutils diffutils findutils fzf
-     git gpg highlight pinentry-mac the_silver_searcher rbenv)
-default['homebrew']['casks'] = %w(emacs)
+  %w[binutils cmake cmigemo coreutils diffutils emacs-plus findutils fzf
+     git gpg highlight pinentry-mac the_silver_searcher rbenv]
+default['homebrew']['casks'] = []
 
 default['devenv']['user'] = 'user'
 default['devenv']['group'] = 'group'
