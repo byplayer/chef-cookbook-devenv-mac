@@ -21,7 +21,7 @@ end
 bash 'install ruby_tool' do
   environment('HOME' => "/Users/#{node['rbenv']['user']}")
   code <<-EOH
-    sudo -H #{node['rbenv']['user']}
+    sudo -H su #{node['rbenv']['user']}
     cd ~/.ruby_tool
     ./install.sh
   EOH
