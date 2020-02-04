@@ -18,7 +18,7 @@ devenv_user_home = "/Users/#{node['devenv']['user']}"
   end
 end
 
-bash 'install ruby_tool' do
+execute 'install ruby_tool' do
   environment('HOME' => "/Users/#{node['rbenv']['user']}")
   user node['rbenv']['user']
   code <<-EOH
