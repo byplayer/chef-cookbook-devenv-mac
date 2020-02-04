@@ -21,8 +21,7 @@ end
 execute 'install ruby_tool' do
   environment('HOME' => "/Users/#{node['rbenv']['user']}")
   user node['rbenv']['user']
-  code <<-EOH
-    cd ~/.ruby_tool
-    ./install.sh
+  command <<-EOH
+    cd ~/.ruby_tool && ./install.sh
   EOH
 end
