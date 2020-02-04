@@ -9,6 +9,7 @@
   homebrew
   devenv-mac::_homebrew
   devenv-mac::_rbenv
+  global
   devenv-mac::_devenv
 ].each do |cookbook|
   include_recipe cookbook

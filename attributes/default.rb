@@ -34,3 +34,8 @@ default['devenv']['.highlight']['repo'] = 'https://github.com/byplayer/dot.highl
 default['devenv']['.highlight']['ref'] = 'master'
 default['devenv']['.highlight']['checkout_branch'] = nil
 default['devenv']['.highlight']['enable_checkout'] = false
+
+# global
+default['global']['version'] = '6.6.4'
+default['global']['prefix'] = '/opt/global'
+default['global']['configure_opt'] = '--with-exuberant-ctags=#{`which ctags`}'

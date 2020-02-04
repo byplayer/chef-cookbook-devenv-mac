@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 name 'devenv-mac'
 maintainer 'byplayer'
 maintainer_email 'byplayer100@gmail.com'
@@ -7,7 +9,7 @@ long_description 'Installs/Configures devenv-mac'
 version '0.1.0'
 chef_version '>= 14.0'
 
-%w[homebrew].each do |cookbook|
+%w[homebrew global].each do |cookbook|
   depends cookbook
 end
 
