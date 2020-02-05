@@ -41,6 +41,7 @@ end
 
 %w[
   .tmux.conf
+  .zshenv
   .config/git/config
   .config/git/commit_template.txt
 ].each do |name|
