@@ -31,8 +31,8 @@ end
 ].each do |name|
   template "#{devenv_user_home}/#{name}" do
     source "#{name}.erb"
-    owner nodenode['devenv']['user']
-    group nodegroup node['devenv']['group']
+    owner node['devenv']['user']
+    group node['devenv']['group']
     variables git_user_name: node['devenv']['git']['user_name'],
               git_user_email: node['devenv']['git']['user_email'],
               git_signing_key: node['devenv']['git']['signing_key'],
