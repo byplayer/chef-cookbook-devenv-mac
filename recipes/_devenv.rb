@@ -41,6 +41,8 @@ end
 
 %w[
   .tmux.conf
+  .config/git/config
+  .config/git/commit_template.txt
 ].each do |name|
   template "#{devenv_user_home}/#{name}" do
     source "#{name}.erb"
