@@ -43,8 +43,10 @@ end
   .config/git/config
   .config/git/commit_template.txt
   .globalrc
+  .private_git_conf.sh
   .tmux.conf
   .zshenv
+  .zshrc
 ].each do |name|
   template "#{devenv_user_home}/#{name}" do
     source "#{name}.erb"
