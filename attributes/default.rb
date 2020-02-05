@@ -38,4 +38,8 @@ default['devenv']['.highlight']['enable_checkout'] = false
 # global
 default['global']['version'] = '6.6.4'
 default['global']['prefix'] = '/opt/global'
-default['global']['configure_opt'] = '--with-exuberant-ctags=#{`which ctags`}'
+default['global']['configure_opt'] = '--with-exuberant-ctags=`which ctags`'
+
+# git
+default['devenv']['git']['user_name'] = 'devuser'
+default['devenv']['git']['user_email'] = 'devuser@hogehoge.hogehoge'
