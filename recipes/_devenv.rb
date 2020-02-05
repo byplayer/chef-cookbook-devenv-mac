@@ -25,3 +25,18 @@ execute 'install ruby_tool' do
     cd ~/.ruby_tool && ./install.sh
   EOH
 end
+
+%w[
+  .tmux.conf
+].each do |name|
+  template "#{devenv_user_home}/#{name}" do
+    source "#{name}.erb"
+    owner nodenode['devenv']['user']
+    group nodegroup node['devenv']['group']
+    variables git_user_name: node['devenv']['git']['user_name'],
+              git_user_email: node['devenv']['git']['user_email'],
+              git_signing_key: node['devenv']['git']['signing_key'],
+              gpg_default_key: node['devenv']['gpg']['default_key']
+    action :create
+  end
+end
