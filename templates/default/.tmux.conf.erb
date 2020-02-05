@@ -24,7 +24,7 @@ if "which xclip" "bind-key -T copy-mode M-w send -X copy-pipe-and-cancel 'xclip 
 if "which xclip" "bind-key -n C-y run 'tmux set-buffer -- \"$(xclip -o -selection clipboard)\"; tmux paste-buffer'"
 
 #for mac
-if "which pbcopy" "bind-key -t emacs-copy M-w copy-pipe 'pbcopy'"
+if "which pbcopy" "bind-key -Tcopy-mode M-w send -X copy-pipe-and-cancel 'pbcopy'"
 if "which pbpaste" "bind-key -n C-y run 'tmux set-buffer -- \"$(pbpaste)\"; tmux paste-buffer'"
 
 # split
