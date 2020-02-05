@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 devenv_user_home = "/Users/#{node['devenv']['user']}"
+
 %w[.zsh.d
    .emacs.d
    .git-extensions
@@ -26,8 +27,22 @@ execute 'install ruby_tool' do
   EOH
 end
 
+%W[
+  #{devenv_user_home}/.config
+].each do |dir_name|
+  directory dir_name do
+    owner node['devenv']['user']
+    group node['devenv']['group']
+    mode '0700'
+    recursive true
+    action :create
+  end
+end
+
 %w[
   .tmux.conf
+  .config/git/config
+  .config/git/commit_template.txt
 ].each do |name|
   template "#{devenv_user_home}/#{name}" do
     source "#{name}.erb"
