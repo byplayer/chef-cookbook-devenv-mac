@@ -43,3 +43,6 @@ default['global']['configure_opt'] = '--with-exuberant-ctags=`which ctags`'
 # git
 default['devenv']['git']['user_name'] = 'devuser'
 default['devenv']['git']['user_email'] = 'devuser@hogehoge.hogehoge'
+
+# gpg
+default['devenv']['gpg'] = {}
