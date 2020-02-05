@@ -40,10 +40,11 @@ end
 end
 
 %w[
-  .tmux.conf
-  .zshenv
   .config/git/config
   .config/git/commit_template.txt
+  .globalrc
+  .tmux.conf
+  .zshenv
 ].each do |name|
   template "#{devenv_user_home}/#{name}" do
     source "#{name}.erb"
