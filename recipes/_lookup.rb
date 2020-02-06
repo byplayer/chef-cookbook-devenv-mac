@@ -53,7 +53,7 @@ bash "install eblook #{node['eblook']['version']}" do
 
     tar xzf eblook-#{node['eblook']['version']}.tar.gz
     cd eblook-#{node['eblook']['version']}
-    ./configure --with-eb-conf=#{node['eb']['eb_install_dir']}/etc/eb.conf \
+    ./configure --with-eb-conf=#{node['eb']['install_dir']}/etc/eb.conf \
       --prefix=#{node['eblook']['install_dir']}-#{node['eblook']['version']}
     make
     make install
