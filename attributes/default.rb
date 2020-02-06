@@ -16,6 +16,7 @@ default['homebrew']['formulas'] = %w[
   go
   gpg
   highlight
+  libmaa
   llvm
   pinentry-mac
   rbenv
