@@ -6,7 +6,7 @@
 
 # eb
 remote_file "#{Chef::Config['file_cache_path']}/eb-#{node['eb']['version']}.tar.bz2" do
-  source 'ftp://ftp.sra.co.jp/pub/misc/eb/eb-#{node['eb']['version']}.tar.bz2'
+  source "ftp://ftp.sra.co.jp/pub/misc/eb/eb-#{node['eb']['version']}.tar.bz2"
   mode 0o0644
   not_if "test -f #{Chef::Config['file_cache_path']}/eb-#{node['eb']['version']}.tar.bz2"
 end
