@@ -64,3 +64,7 @@ default['devenv']['git']['user_email'] = 'devuser@hogehoge.hogehoge'
 
 # gpg
 default['devenv']['gpg'] = {}
+
+# lookup related
+default['eb']['version'] = '4.4.3'
+default['eb']['install_dir'] = '/opt/eb'
