@@ -34,10 +34,10 @@ bash "install eb #{node['eb']['version']}" do
 end
 
 # eblook
-remote_file "#{Chef::Config['file_cache_path']}/eb-#{node['eb']['version']}.tar.bz2" do
+remote_file "#{Chef::Config['file_cache_path']}/eblook-#{node['eblook']['version']}.tar.gz" do
   source "http://ikazuhiro.s206.xrea.com/filemgmt_data/files/eblook-#{CGI.escape(node['eblook']['version'])}.tar.gz"
   mode 0o0644
-  not_if "test -f #{Chef::Config['file_cache_path']}/eb-#{node['eblook']['version']}.tar.gz"
+  not_if "test -f #{Chef::Config['file_cache_path']}/eblook-#{node['eblook']['version']}.tar.gz"
 end
 
 bash "install eblook #{node['eblook']['version']}" do
