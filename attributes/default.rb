@@ -68,3 +68,6 @@ default['devenv']['gpg'] = {}
 # lookup related
 default['eb']['version'] = '4.4.3'
 default['eb']['install_dir'] = '/opt/eb'
+
+default['eblook']['version'] = '1.6.1+media-20150724'
+default['eblook']['install_dir'] = '/opt/eblook'

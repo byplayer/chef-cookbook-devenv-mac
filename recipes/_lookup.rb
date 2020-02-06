@@ -34,5 +34,36 @@ bash "install eb #{node['eb']['version']}" do
 end
 
 # eblook
+remote_file "#{Chef::Config['file_cache_path']}/eb-#{node['eb']['version']}.tar.bz2" do
+  source "http://ikazuhiro.s206.xrea.com/filemgmt_data/files/eblook-#{CGI.escape(node['eblook']['version'])}.tar.gz"
+  mode 0o0644
+  not_if "test -f #{Chef::Config['file_cache_path']}/eb-#{node['eblook']['version']}.tar.gz"
+end
+
+bash "install eblook #{node['eblook']['version']}" do
+  cwd Chef::Config['file_cache_path']
+  code <<-CODE
+    if [ -s #{node['eblook']['install_dir']} ]; then
+      rm #{node['eblook']['install_dir']}
+    fi
+
+    if [ -d eblook-#{node['eblook']['version']} ]; then
+      rm -r eblook-#{node['eblook']['version']}
+    fi
+
+    tar xzf eblook-#{node['eblook']['version']}.tar.gz
+    cd eblook-#{node['eblook']['version']}
+    ./configure --with-eb-conf=#{node['eb']['eb_install_dir']}/etc/eb.conf \
+      --prefix=#{node['eblook']['install_dir']}-#{node['eblook']['version']}
+    make
+    make install
+
+    ln -s #{node['eblook']['install_dir']}-#{node['eblook']['version']} #{node['eblook']['install_dir']}
+  CODE
+
+  not_if "test -d #{node['eblook']['install_dir']}-#{node['eblook']['version']}"
+end
+
+# http://ikazuhiro.s206.xrea.com/filemgmt_data/files/eblook-1.6.1%2Bmedia-20150724.tar.gz
 
 # lookup+media
