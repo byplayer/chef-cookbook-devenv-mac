@@ -9,6 +9,8 @@ default['homebrew']['formulas'] = %w[
   cmigemo
   coreutils
   diffutils
+  docker
+  docker-compose
   emacs-plus
   findutils
   fzf
@@ -23,7 +25,9 @@ default['homebrew']['formulas'] = %w[
   the_silver_searcher
   tmux
 ]
-default['homebrew']['casks'] = []
+default['homebrew']['casks'] = %w[
+  docker
+]
 
 default['devenv']['user'] = 'user'
 default['devenv']['group'] = 'group'
