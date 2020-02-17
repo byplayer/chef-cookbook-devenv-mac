@@ -3,7 +3,7 @@
 template '/etc/updatedb.conf' do
   source 'etc/updatedb.conf.erb'
   owner 'root'
-  group 'root'
+  mode '0644'
 end
 
 cron 'updatedb' do
