@@ -11,6 +11,7 @@
   devenv-mac::_rbenv
   global
   devenv-mac::_lookup
+  devenv-mac::_updatedb
   devenv-mac::_devenv
 ].each do |cookbook|
   include_recipe cookbook
