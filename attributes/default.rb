@@ -23,6 +23,7 @@ default['homebrew']['formulas'] = %w[
   rbenv
   the_silver_searcher
   tmux
+  watch
 ]
 default['homebrew']['casks'] = %w[
   docker
