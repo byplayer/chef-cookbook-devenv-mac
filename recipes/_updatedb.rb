@@ -6,7 +6,7 @@ template '/etc/updatedb.conf' do
   mode '0644'
 end
 
-cron 'updatedb' do
+cron '/usr/local/opt/findutils/libexec/gnubin/updatedb' do
   minute '0'
   user 'root'
   command 'updatedb'
