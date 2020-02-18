@@ -9,5 +9,5 @@ end
 cron 'updatedb' do
   minute '0'
   user 'root'
-  command '/usr/local/opt/findutils/libexec/gnubin/updatedb'
+  command 'updatedb'
 end
