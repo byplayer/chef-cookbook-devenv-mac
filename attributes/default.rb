@@ -84,3 +84,5 @@ default['updatedb']['prunefs'] = 'NFS nfs nfs4 rpc_pipefs afs binfmt_misc proc s
 # golang
 default['go']['owner'] = 'root'
 default['go']['group'] = 'wheel'
+default['golang']['owner'] = 'root'
+default['golang']['group'] = 'wheel'
