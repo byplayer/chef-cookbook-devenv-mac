@@ -10,6 +10,7 @@
   devenv-mac::_homebrew
   devenv-mac::_rbenv
   global
+  golang::packages
   devenv-mac::_lookup
   devenv-mac::_updatedb
   devenv-mac::_devenv
