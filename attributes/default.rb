@@ -82,7 +82,5 @@ default['updatedb']['prunepaths'] = '/tmp /private/tmp /var/spool /Applications'
 default['updatedb']['prunefs'] = 'NFS nfs nfs4 rpc_pipefs afs binfmt_misc proc smbfs autofs iso9660 ncpfs coda devpts ftpfs devfs mfs shfs sysfs cifs lustre_lite tmpfs usbfs udf fuse.glusterfs fuse.sshfs curlftpfs ecryptfs fusesmb devtmpfs'
 
 # golang
-default['go']['owner'] = 'root'
-default['go']['group'] = 'wheel'
 default['golang']['owner'] = 'root'
 default['golang']['group'] = 'wheel'
