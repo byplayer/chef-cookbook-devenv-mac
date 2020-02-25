@@ -20,6 +20,7 @@ default['homebrew']['formulas'] = %w[
   libmaa
   llvm
   pinentry-mac
+  plantuml
   pyenv-virtualenv
   pyenv-virtualenvwrapper
   rbenv
