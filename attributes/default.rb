@@ -20,6 +20,8 @@ default['homebrew']['formulas'] = %w[
   libmaa
   llvm
   pinentry-mac
+  pyenv-virtualenv
+  pyenv-virtualenvwrapper
   rbenv
   the_silver_searcher
   tmux
