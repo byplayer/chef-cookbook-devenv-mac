@@ -1,13 +1,7 @@
 # frozen_string_literal: true
 
-template '/usr/local/etc/updatedb.conf' do
-  source 'usr/local/etc/updatedb.conf.erb'
-  owner 'root'
-  mode '0644'
-end
-
 cron 'updatedb' do
   minute '0'
   user 'root'
-  command 'updatedb'
+  command "#{node['updatedb']['command']} #{node['updatedb']['opts']} > /var/log/updatedb.log"
 end
