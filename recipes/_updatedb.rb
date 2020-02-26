@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 template '/usr/local/etc/updatedb.conf' do
-  source 'usr/localetc/updatedb.conf.erb'
+  source 'usr/local/etc/updatedb.conf.erb'
   owner 'root'
   mode '0644'
 end
