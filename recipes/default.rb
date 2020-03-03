@@ -10,6 +10,7 @@
   devenv-mac::_homebrew
   devenv-mac::_rbenv
   devenv-mac::_basic_env
+  devenv-mac::_emacs
   global
   chef-golang
   chef-golang::packages
