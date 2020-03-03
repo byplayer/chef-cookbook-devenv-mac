@@ -1,6 +1,6 @@
 # make link under applications
 bash 'link emacs app' do
-  comamnd <<-EOH
+  code <<-EOH
     if [ -s /Applications/Emacs.app ] ; then
       rm /Applications/Emacs.app
     fi
