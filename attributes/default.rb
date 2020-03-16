@@ -25,6 +25,7 @@ default['homebrew']['formulas'] = %w[
   pyenv-virtualenv
   pyenv-virtualenvwrapper
   r
+  rstudio
   rbenv
   the_silver_searcher
   tmux
