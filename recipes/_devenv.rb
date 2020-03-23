@@ -43,6 +43,7 @@ end
   .config/git/config
   .config/git/commit_template.txt
   .globalrc
+  .prettierrc
   .private_git_conf.sh
   .tmux.conf
   .zshenv
