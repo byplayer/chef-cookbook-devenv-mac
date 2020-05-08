@@ -25,7 +25,6 @@ default['homebrew']['formulas'] = %w[
   pyenv-virtualenv
   pyenv-virtualenvwrapper
   r
-  rar
   rbenv
   the_silver_searcher
   tmux
@@ -33,6 +32,7 @@ default['homebrew']['formulas'] = %w[
 ]
 default['homebrew']['casks'] = %w[
   docker
+  rar
   rstudio
 ]
 
