@@ -12,7 +12,8 @@
   devenv-mac::_basic_env
   devenv-mac::_emacs
   global
-  golang::packages
+  chef-golang
+  chef-golang::packages
   devenv-mac::_lookup
   devenv-mac::_updatedb
   devenv-mac::_devenv
