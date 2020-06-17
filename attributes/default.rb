@@ -17,6 +17,7 @@ default['homebrew']['formulas'] = %w[
   git
   gpg
   highlight
+  jq
   libmaa
   llvm
   opencv
