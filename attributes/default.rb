@@ -25,6 +25,7 @@ default['homebrew']['formulas'] = %w[
   plantuml
   pyenv-virtualenv
   pyenv-virtualenvwrapper
+  qt
   r
   rbenv
   the_silver_searcher
