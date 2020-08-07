@@ -5,6 +5,7 @@ default['homebrew']['taps'] = %w[railwaycat/emacsmacport]
 default['homebrew']['formulas'] = %w[
   aspell
   binutils
+  bzip2
   cmake
   cmigemo
   coreutils
