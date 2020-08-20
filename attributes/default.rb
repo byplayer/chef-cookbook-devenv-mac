@@ -37,6 +37,7 @@ default['homebrew']['casks'] = %w[
   docker
   rar
   rstudio
+  qt-creator
 ]
 
 default['devenv']['user'] = 'user'
