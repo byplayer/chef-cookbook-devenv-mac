@@ -5,6 +5,10 @@
 # Recipe:: default
 #
 # Copyright:: 2020, The Authors, All Rights Reserved.
+package [
+  'mercurial'
+]
+
 %w[
   homebrew
   devenv-mac::_homebrew
