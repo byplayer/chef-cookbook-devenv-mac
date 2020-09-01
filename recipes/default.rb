@@ -5,6 +5,10 @@
 # Recipe:: default
 #
 # Copyright:: 2020, The Authors, All Rights Reserved.
+homebrew_package 'test' do
+  package_name 'git'
+end
+
 %w[
   homebrew
   devenv-mac::_homebrew
