@@ -94,3 +94,4 @@ default['updatedb']['opts'] = '--prunepaths=\'/Users/*/Box /Users/*/Library /Use
 # golang
 default['golang']['owner'] = 'root'
 default['golang']['group'] = 'wheel'
+default['golang']['scm'] = false
