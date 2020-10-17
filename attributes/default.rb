@@ -31,6 +31,7 @@ default['homebrew']['formulas'] = %w[
   rbenv
   the_silver_searcher
   tmux
+  tree
   watch
 ]
 default['homebrew']['casks'] = %w[
