@@ -39,6 +39,7 @@ default['homebrew']['casks'] = %w[
   rar
   rstudio
   qt-creator
+  alfred
 ]
 
 default['devenv']['user'] = 'user'
