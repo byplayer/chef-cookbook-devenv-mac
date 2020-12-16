@@ -35,11 +35,13 @@ default['homebrew']['formulas'] = %w[
   watch
 ]
 default['homebrew']['casks'] = %w[
+  alfred
   docker
   rar
   rstudio
   qt-creator
-  alfred
+  vagrant
+  virtualbox
 ]
 
 default['devenv']['user'] = 'user'
