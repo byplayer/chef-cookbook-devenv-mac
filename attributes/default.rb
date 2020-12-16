@@ -42,6 +42,7 @@ default['homebrew']['casks'] = %w[
   qt-creator
   vagrant
   virtualbox
+  virtualbox-extension-pack
 ]
 
 default['devenv']['user'] = 'user'
