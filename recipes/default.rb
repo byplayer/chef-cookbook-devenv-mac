@@ -6,7 +6,6 @@
 #
 # Copyright:: 2020, The Authors, All Rights Reserved.
 %w[
-  homebrew
   devenv-mac::_homebrew
   devenv-mac::_rbenv
   devenv-mac::_basic_env
