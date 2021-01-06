@@ -6,6 +6,7 @@ default['homebrew']['formulas'] = %w[
   aspell
   binutils
   bzip2
+  clang-format
   cmake
   cmigemo
   coreutils
@@ -94,7 +95,8 @@ default['eblook']['install_dir'] = '/opt/eblook'
 
 # updatedb
 default['updatedb']['command'] = '/usr/local/opt/findutils/libexec/gnubin/updatedb'
-default['updatedb']['opts'] = '--prunepaths=\'/Users/*/Box /Users/*/Library /Users/*/.emacs.d/backup /Users/*/.emacs.d/undohist /Users/*/.emacs.d/undo-tree-hist\' --localpaths=/Users'
+default['updatedb']['opts'] =
+  '--prunepaths=\'/Users/*/Box /Users/*/Library /Users/*/.emacs.d/backup /Users/*/.emacs.d/undohist /Users/*/.emacs.d/undo-tree-hist\' --localpaths=/Users'
 
 # golang
 default['golang']['owner'] = 'root'
