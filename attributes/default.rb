@@ -16,7 +16,6 @@ default['homebrew']['formulas'] = %w[
   emacs-mac
   findutils
   fzf
-  gimp
   git
   gpg
   highlight
@@ -39,6 +38,7 @@ default['homebrew']['formulas'] = %w[
 default['homebrew']['casks'] = %w[
   alfred
   docker
+  gimp
   rar
   rstudio
   qt-creator
