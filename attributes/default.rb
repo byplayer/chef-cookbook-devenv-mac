@@ -16,6 +16,7 @@ default['homebrew']['formulas'] = %w[
   emacs-mac
   findutils
   fzf
+  gimp
   git
   gpg
   highlight
