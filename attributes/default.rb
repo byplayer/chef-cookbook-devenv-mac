@@ -51,27 +51,27 @@ default['devenv']['user'] = 'user'
 default['devenv']['group'] = 'group'
 
 default['devenv']['.zsh.d']['repo'] = 'https://github.com/byplayer/dot.zsh.d.git'
-default['devenv']['.zsh.d']['ref'] = 'master'
+default['devenv']['.zsh.d']['ref'] = 'main'
 default['devenv']['.zsh.d']['checkout_branch'] = nil
 default['devenv']['.zsh.d']['enable_checkout'] = false
 
 default['devenv']['.emacs.d']['repo'] = 'https://github.com/byplayer/dot.emacs.d.git'
-default['devenv']['.emacs.d']['ref'] = 'master'
+default['devenv']['.emacs.d']['ref'] = 'main'
 default['devenv']['.emacs.d']['checkout_branch'] = nil
 default['devenv']['.emacs.d']['enable_checkout'] = false
 
-default['devenv']['.git-extensions']['repo'] = 'https://github.com/muratayusuke/git-extensions.git'
-default['devenv']['.git-extensions']['ref'] = 'master'
+default['devenv']['.git-extensions']['repo'] = 'https://github.com/byplayer/git-extensions.git'
+default['devenv']['.git-extensions']['ref'] = 'main'
 default['devenv']['.git-extensions']['checkout_branch'] = nil
 default['devenv']['.git-extensions']['enable_checkout'] = false
 
 default['devenv']['.ruby_tool']['repo'] = 'https://github.com/byplayer/ruby_tool.git'
-default['devenv']['.ruby_tool']['ref'] = 'master'
+default['devenv']['.ruby_tool']['ref'] = 'main'
 default['devenv']['.ruby_tool']['checkout_branch'] = nil
 default['devenv']['.ruby_tool']['enable_checkout'] = false
 
 default['devenv']['.highlight']['repo'] = 'https://github.com/byplayer/dot.highlight.git'
-default['devenv']['.highlight']['ref'] = 'master'
+default['devenv']['.highlight']['ref'] = 'main'
 default['devenv']['.highlight']['checkout_branch'] = nil
 default['devenv']['.highlight']['enable_checkout'] = false
 
