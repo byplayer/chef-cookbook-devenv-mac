@@ -97,7 +97,7 @@ default['eblook']['install_dir'] = '/opt/eblook'
 # updatedb
 default['updatedb']['command'] = '/usr/local/opt/findutils/libexec/gnubin/updatedb'
 default['updatedb']['opts'] =
-  '--prunepaths=\'/Users/*/Box /Users/*/Library /Users/*/.emacs.d/backup /Users/*/.emacs.d/undohist /Users/*/.emacs.d/undo-tree-hist\' --localpaths=/Users'
+  '--prunepaths=\'/Users/*/Box /Users/*/Library /Users/*/.emacs.d/backup /Users/*/.emacs.d/undohist /Users/*/.emacs.d/undo-tree-hist /Users/*/.berkshelf\' --localpaths=/Users'
 
 # golang
 default['golang']['owner'] = 'root'
