@@ -59,6 +59,7 @@ end
   .globalrc
   .prettierrc
   .private_git_conf.sh
+  .textlintrc
   .tmux.conf
   .zshenv
   .zshrc
