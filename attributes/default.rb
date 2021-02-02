@@ -75,6 +75,11 @@ default['devenv']['.highlight']['ref'] = 'main'
 default['devenv']['.highlight']['checkout_branch'] = nil
 default['devenv']['.highlight']['enable_checkout'] = false
 
+default['devenv']['.node_tool']['repo'] = 'https://github.com/byplayer/node_tool.git'
+default['devenv']['.node_tool']['ref'] = 'main'
+default['devenv']['.node_tool']['checkout_branch'] = nil
+default['devenv']['.node_tool']['enable_checkout'] = false
+
 # global
 default['global']['version'] = '6.6.4'
 default['global']['prefix'] = '/opt/global'

@@ -6,7 +6,8 @@ devenv_user_home = "/Users/#{node['devenv']['user']}"
    .emacs.d
    .git-extensions
    .ruby_tool
-   .highlight].each do |name|
+   .highlight
+   .node_tool].each do |name|
   git "#{devenv_user_home}/#{name}" do
     repository node['devenv'][name]['repo']
     reference node['devenv'][name]['ref']
@@ -20,10 +21,23 @@ devenv_user_home = "/Users/#{node['devenv']['user']}"
 end
 
 execute 'install ruby_tool' do
-  environment('HOME' => "/Users/#{node['rbenv']['user']}")
-  user node['rbenv']['user']
+  environment('HOME' => "/Users/#{node['devenv']['user']}")
+  user node['devenv']['user']
   command <<-EOH
     cd ~/.ruby_tool && ./install.sh
+  EOH
+end
+
+# install node_tool
+bash 'install node tool' do
+  cwd "/Users/#{node['devenv']['user']}"
+  user node['devenv']['user']
+  group node['devenv']['group']
+  environment({ 'HOME' => "/Users/#{node['devenv']['user']}" })
+
+  code <<-EOH
+    cd .node_tool
+    ./install.sh
   EOH
 end
 
