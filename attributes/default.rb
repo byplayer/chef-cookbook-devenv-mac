@@ -39,6 +39,7 @@ default['homebrew']['casks'] = %w[
   alfred
   docker
   gimp
+  iterm2
   rar
   rstudio
   qt-creator
