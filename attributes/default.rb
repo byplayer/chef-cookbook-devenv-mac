@@ -22,6 +22,7 @@ default['homebrew']['formulas'] = %w[
   jq
   libmaa
   llvm
+  midnight-commander
   opencv
   pinentry-mac
   plantuml
