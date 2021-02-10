@@ -43,6 +43,8 @@ end
 
 %W[
   #{devenv_user_home}/.config
+  #{devenv_user_home}/.config/git
+  #{devenv_user_home}/.config/mc
 ].each do |dir_name|
   directory dir_name do
     owner node['devenv']['user']

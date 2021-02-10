@@ -38,12 +38,16 @@ default['homebrew']['formulas'] = %w[
 ]
 default['homebrew']['casks'] = %w[
   alfred
+  bartender
   docker
   gimp
+  google-chrome
+  google-japanese-ime
   pdftotext
   rar
   rstudio
   qt-creator
+  scroll-reverser
   vagrant
   virtualbox
   virtualbox-extension-pack
