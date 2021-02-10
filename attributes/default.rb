@@ -41,8 +41,6 @@ default['homebrew']['casks'] = %w[
   bartender
   docker
   gimp
-  google-chrome
-  google-japanese-ime
   pdftotext
   rar
   rstudio
