@@ -56,6 +56,7 @@ end
 %w[
   .config/git/config
   .config/git/commit_template.txt
+  .config/mc/mc.keymap
   .globalrc
   .prettierrc
   .private_git_conf.sh
