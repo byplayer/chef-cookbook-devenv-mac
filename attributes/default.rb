@@ -37,11 +37,11 @@ default['homebrew']['formulas'] = %w[
   watch
 ]
 default['homebrew']['casks'] = %w[
+  1clipboard
   alfred
   bartender
   docker
   gimp
-  pdftotext
   rar
   rstudio
   qt-creator
