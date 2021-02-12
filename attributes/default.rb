@@ -37,11 +37,12 @@ default['homebrew']['formulas'] = %w[
   watch
 ]
 default['homebrew']['casks'] = %w[
-  1clipboard
   alfred
   bartender
+  clipy
   docker
   gimp
+  font-source-han-code-jp
   rar
   rstudio
   qt-creator
