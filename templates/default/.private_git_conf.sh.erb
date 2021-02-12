@@ -2,9 +2,9 @@
 
 set -eu
 
-git config user.name <%= @git_user_name %>
-git config user.email <%= @git_user_email %>
-git config user.signingkey <%= @git_signing_key %>
+git config user.name <%= @git_private_user_name %>
+git config user.email <%= @git_private_user_email %>
+git config user.signingkey <%= @git_private_signing_key %>
 
 # verify
 echo -n user.name:
