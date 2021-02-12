@@ -60,6 +60,7 @@ end
   .config/git/config
   .config/git/commit_template.txt
   .config/mc/mc.keymap
+  .dir_colors
   .globalrc
   .prettierrc
   .private_git_conf.sh
