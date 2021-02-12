@@ -42,7 +42,7 @@ default['homebrew']['casks'] = %w[
   clipy
   docker
   gimp
-  font-source-han-code-jp
+  homebrew/cask-fonts/font-source-han-code-jp
   rar
   rstudio
   qt-creator
