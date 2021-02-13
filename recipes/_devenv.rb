@@ -94,12 +94,30 @@ end
     owner node['devenv']['user']
     group node['devenv']['group']
     variables git_user_name: node['devenv']['git']['user_name'],
-                   git_user_email: node['devenv']['git']['user_email'],
-                   git_signing_key: node['devenv']['git']['signing_key'],
-                   git_private_user_name: node['devenv']['git']['private_user_name'],
-                   git_private_user_email: node['devenv']['git']['private_user_email'],
-                   git_private_signing_key: node['devenv']['git']['private_signing_key'],
-                  gpg_default_key: node['devenv']['gpg']['default_key']
+              git_user_email: node['devenv']['git']['user_email'],
+              git_signing_key: node['devenv']['git']['signing_key'],
+              git_private_user_name: node['devenv']['git']['private_user_name'],
+              git_private_user_email: node['devenv']['git']['private_user_email'],
+              git_private_signing_key: node['devenv']['git']['private_signing_key'],
+              gpg_default_key: node['devenv']['gpg']['default_key']
     action :create
   end
+end
+
+# for pyenv
+%W[
+  #{devenv_user_home}/.pyenv
+].each do |dir_name|
+  directory dir_name do
+    owner node['devenv']['user']
+    group node['devenv']['group']
+    mode '0755'
+    recursive true
+    action :create
+  end
+end
+
+link "#{devenv_user_home}/.pyenv/bin" do
+  to '/usr/local/opt/pyenv/bin'
+  link_type :symbolic
 end
