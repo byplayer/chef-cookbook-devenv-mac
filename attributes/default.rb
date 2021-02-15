@@ -24,6 +24,7 @@ default['homebrew']['formulas'] = %w[
   llvm
   midnight-commander
   opencv
+  packer
   pinentry-mac
   plantuml
   pyenv-virtualenv
