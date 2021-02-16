@@ -39,6 +39,7 @@ default['homebrew']['formulas'] = %w[
 ]
 default['homebrew']['casks'] = %w[
   alfred
+  appcleaner
   bartender
   clipy
   docker
