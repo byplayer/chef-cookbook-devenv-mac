@@ -36,6 +36,7 @@ default['homebrew']['formulas'] = %w[
   the_silver_searcher
   tmux
   tree
+  universal-ctags
   watch
 ]
 default['homebrew']['casks'] = %w[
