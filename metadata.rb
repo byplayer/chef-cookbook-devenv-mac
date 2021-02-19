@@ -9,7 +9,7 @@ long_description 'Installs/Configures devenv-mac'
 version '0.1.0'
 chef_version '>= 14.0'
 
-%w[homebrew global golang].each do |cookbook|
+%w[homebrew global golang universal-ctags].each do |cookbook|
   depends cookbook
 end
 

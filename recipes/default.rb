@@ -10,6 +10,7 @@
   devenv-mac::_rbenv
   devenv-mac::_basic_env
   devenv-mac::_emacs
+  universal-ctags
   global
   golang
   devenv-mac::_lookup
