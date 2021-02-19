@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 default['homebrew']['owner'] = 'brew_owner'
-default['homebrew']['taps'] = %w[railwaycat/emacsmacport]
+default['homebrew']['taps'] =
+  %w[railwaycat/emacsmacport universal-ctags/homebrew-universal-ctags]
 default['homebrew']['formulas'] = %w[
   aspell
   binutils
