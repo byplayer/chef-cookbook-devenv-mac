@@ -2,7 +2,7 @@
 
 default['homebrew']['owner'] = 'brew_owner'
 default['homebrew']['taps'] =
-  %w[railwaycat/emacsmacport universal-ctags/homebrew-universal-ctags]
+  %w[railwaycat/emacsmacport
 default['homebrew']['formulas'] = %w[
   aspell
   binutils
@@ -36,7 +36,6 @@ default['homebrew']['formulas'] = %w[
   the_silver_searcher
   tmux
   tree
-  universal-ctags
   watch
 ]
 default['homebrew']['casks'] = %w[
