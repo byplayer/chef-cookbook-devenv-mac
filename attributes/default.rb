@@ -10,8 +10,6 @@ default['homebrew']['formulas'] = %w[
   cmake
   cmigemo
   coreutils
-  cvs
-  cvsps
   diffutils
   docker
   docker-compose
