@@ -9,7 +9,7 @@
   devenv-mac::_homebrew
   devenv-mac::_rbenv
   devenv-mac::_basic_env
-  devnenv-mac::_loopback
+  devenv-mac::_loopback
   devenv-mac::_emacs
   universal-ctags
   global
