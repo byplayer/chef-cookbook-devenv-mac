@@ -152,3 +152,15 @@ bash 'install sdkman' do
   EOH
   not_if "test -f #{devenv_user_home}/.sdkman/bin/sdkman-init.sh"
 end
+
+# rust environment
+bash 'install rust environment' do
+  cwd devenv_user_home
+  user node['devenv']['user']
+  group node['devenv']['group']
+  environment({ 'HOME' => devenv_user_home })
+
+  code <<-EOH
+    curl https://sh.rustup.rs -sSf | bash -s -- -y --no-modify-path --profile default
+  EOH
+end
