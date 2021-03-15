@@ -164,3 +164,15 @@ bash 'install rust environment' do
     curl https://sh.rustup.rs -sSf | bash -s -- -y --no-modify-path --profile default
   EOH
 end
+
+# nvm
+bash 'install nvm' do
+  cwd devenv_user_home
+  user node['devenv']['user']
+  group node['devenv']['group']
+  environment({ 'HOME' => devenv_user_home })
+
+  code <<-EOH
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+  EOH
+end
