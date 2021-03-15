@@ -175,4 +175,6 @@ bash 'install nvm' do
   code <<-EOH
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
   EOH
+
+  not_if "test -f #{devenv_user_home}/.nvm/nvm.sh"
 end
