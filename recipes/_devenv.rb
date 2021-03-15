@@ -187,6 +187,7 @@ node['nvm']['versions'].each do |v|
     environment({ 'HOME' => devenv_user_home })
 
     code <<-EOH
+      source ~/.nvm/nvm.sh
       nvm install #{v}
     EOH
 
