@@ -191,6 +191,6 @@ node['nvm']['versions'].each do |v|
       nvm install #{v}
     EOH
 
-    not_if "nvm list | grep #{v}"
+    not_if "test -d #{devenv_user_home}/.nvm/versions/node/#{v}"
   end
 end
