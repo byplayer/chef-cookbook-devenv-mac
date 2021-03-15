@@ -178,3 +178,18 @@ bash 'install nvm' do
 
   not_if "test -f #{devenv_user_home}/.nvm/nvm.sh"
 end
+
+node['nvm']['versions'].each do |v|
+  bash "install node(#{v})" do
+    cwd devenv_user_home
+    user node['devenv']['user']
+    group node['devenv']['group']
+    environment({ 'HOME' => devenv_user_home })
+
+    code <<-EOH
+      nvm install #{v}
+    EOH
+
+    not_if "nvm list | grep #{v}"
+  end
+end

@@ -114,3 +114,6 @@ default['updatedb']['opts'] =
 # golang
 default['golang']['owner'] = 'root'
 default['golang']['group'] = 'wheel'
+
+# node
+default['nvm']['versions'] = []
