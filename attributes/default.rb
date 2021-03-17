@@ -23,6 +23,7 @@ default['homebrew']['formulas'] = %w[
   libmaa
   llvm
   midnight-commander
+  nginx
   opencv
   packer
   pinentry-mac
