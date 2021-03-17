@@ -1,0 +1,14 @@
+/usr/local/var/log/nginx/*.log
+/usr/local/var/log/nginx/vhosts/*/*.log
+{
+	daily
+	dateext
+	missingok
+	rotate 30
+	compress
+	create 0640 yukio.goto admin
+	sharedscripts
+	postrotate
+		brew services restart nginx >/dev/null 2>&1
+	endscript
+}

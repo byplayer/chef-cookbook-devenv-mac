@@ -12,3 +12,15 @@ include_recipe 'homebrew::install_casks'
     code "brew services start #{service}"
   end
 end
+
+%w[
+  /usr/local/etc/logrotate.d/nginx
+].each do |t|
+  template t do
+    source "#{t}.erb"
+    owner node['devenv']['user']
+    group 'admin'
+    mode '0644'
+    action :create
+  end
+end
