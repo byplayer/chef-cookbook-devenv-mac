@@ -22,6 +22,7 @@ default['homebrew']['formulas'] = %w[
   jq
   libmaa
   llvm
+  logrotate
   midnight-commander
   nginx
   opencv
