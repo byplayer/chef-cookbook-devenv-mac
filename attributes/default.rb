@@ -47,6 +47,7 @@ default['homebrew']['casks'] = %w[
   docker
   gimp
   homebrew/cask-fonts/font-source-han-code-jp
+  jiggler
   rar
   rstudio
   qt-creator
