@@ -19,6 +19,7 @@ default['homebrew']['formulas'] = %w[
   git
   gpg
   highlight
+  iproute2mac
   jq
   libmaa
   llvm
