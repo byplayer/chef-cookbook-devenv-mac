@@ -47,7 +47,6 @@ default['homebrew']['casks'] = %w[
   clipy
   docker
   gimp
-  # homebrew/cask-fonts/font-source-han-code-jp
   jiggler
   rar
   rstudio
