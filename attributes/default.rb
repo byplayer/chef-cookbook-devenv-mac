@@ -47,6 +47,7 @@ default['homebrew']['casks'] = %w[
   clipy
   docker
   gimp
+  google-japanese-ime
   homebrew/cask-fonts/font-source-han-code-jp
   jiggler
   rar
