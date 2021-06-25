@@ -6,6 +6,7 @@
 #
 # Copyright:: 2020, The Authors, All Rights Reserved.
 %w[
+  devenv-mac::_source-han-code-jp
   devenv-mac::_homebrew
   devenv-mac::_rbenv
   devenv-mac::_basic_env

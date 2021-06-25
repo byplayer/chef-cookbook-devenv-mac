@@ -119,3 +119,7 @@ default['golang']['group'] = 'wheel'
 
 # node
 default['nvm']['versions'] = []
+
+# source-han-code-jp
+default['source-han-code-jp']['base_url'] = 'https://github.com/adobe-fonts/source-han-code-jp/archive'
+default['source-han-code-jp']['version'] = '2.011R'
