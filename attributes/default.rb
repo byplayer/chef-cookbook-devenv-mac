@@ -54,6 +54,7 @@ default['homebrew']['casks'] = %w[
   qt-creator
   scroll-reverser
   vagrant
+  viber
 ]
 
 default['devenv']['user'] = 'user'
