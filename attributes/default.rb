@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 default['homebrew']['owner'] = 'brew_owner'
-default['homebrew']['taps'] = %w[]
+default['homebrew']['taps'] = %w[railwaycat/emacsmacport]
 default['homebrew']['formulas'] = %w[
   aspell
   binutils
@@ -13,6 +13,7 @@ default['homebrew']['formulas'] = %w[
   diffutils
   docker
   docker-compose
+  emacs-mac
   findutils
   fzf
   git
@@ -124,8 +125,3 @@ default['nvm']['versions'] = []
 # source-han-code-jp
 default['source-han-code-jp']['base_url'] = 'https://github.com/adobe-fonts/source-han-code-jp/archive'
 default['source-han-code-jp']['version'] = '2.011R'
-
-# emacs
-default['emacs']['tap'] = 'd12frosted/emacs-plus'
-default['emacs']['cask']['name'] = 'emacs-plus@28'
-default['emacs']['cask']['options'] = '--with-native-comp'
