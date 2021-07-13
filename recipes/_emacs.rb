@@ -3,6 +3,7 @@
 homebrew_tap node['emacs']['tap']
 
 homebrew_cask node['emacs']['cask']['name'] do
+  cask_name node['emacs']['cask']['name']
   options node['emacs']['cask']['options']
 end
 
