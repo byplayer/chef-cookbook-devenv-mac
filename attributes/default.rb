@@ -127,5 +127,5 @@ default['source-han-code-jp']['version'] = '2.011R'
 
 # emacs
 default['emacs']['tap'] = 'd12frosted/emacs-plus'
-default['emacs']['cask_name'] = 'emacs-plus@28'
+default['emacs']['cask']['name'] = 'emacs-plus@28'
 default['emacs']['cask']['options'] = '--with-native-comp'
