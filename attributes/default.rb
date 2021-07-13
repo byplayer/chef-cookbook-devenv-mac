@@ -21,6 +21,7 @@ default['homebrew']['formulas'] = %w[
   highlight
   iproute2mac
   jq
+  libgccjit
   libmaa
   llvm
   logrotate
