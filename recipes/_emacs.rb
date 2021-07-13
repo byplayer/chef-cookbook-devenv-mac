@@ -4,6 +4,6 @@ bash 'link emacs app' do
     if [ -s /Applications/Emacs.app ] ; then
       rm /Applications/Emacs.app
     fi
-    ln -s /usr/local/opt/emacs-mac/Emacs.app /Applications
+    ln -s /usr/local/opt/emacs-plus/Emacs.app /Applications
   EOH
 end
