@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 default['homebrew']['owner'] = 'brew_owner'
-default['homebrew']['taps'] = %w[railwaycat/emacsmacport]
+default['homebrew']['taps'] = %w[d12frosted/emacs-plus]
 default['homebrew']['formulas'] = %w[
   aspell
   binutils
@@ -13,7 +13,7 @@ default['homebrew']['formulas'] = %w[
   diffutils
   docker
   docker-compose
-  emacs-mac
+  emacs-plus@28
   findutils
   fzf
   git
