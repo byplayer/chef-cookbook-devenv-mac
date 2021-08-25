@@ -50,6 +50,7 @@ default['homebrew']['casks'] = %w[
   gimp
   google-japanese-ime
   jiggler
+  meld
   rar
   rstudio
   qt-creator
