@@ -7,9 +7,9 @@ include_recipe 'homebrew::install_casks'
 %w[
   logrotate
 ].each do |service|
-  bash "start service[#{service}]" do
+  bash "restart service[#{service}]" do
     user node['devenv']['user']
-    code "brew services start #{service}"
+    code "brew services restart #{service}"
   end
 end
 
