@@ -41,12 +41,14 @@ default['homebrew']['formulas'] = %w[
   tree
   watch
 ]
+
 default['homebrew']['casks'] = %w[
   alfred
   appcleaner
   bartender
   clipy
   docker
+  ganttproject
   gimp
   google-japanese-ime
   jiggler
