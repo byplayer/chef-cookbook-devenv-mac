@@ -39,6 +39,7 @@ default['homebrew']['formulas'] = %w[
   the_silver_searcher
   tmux
   tree
+  virtualenv
   watch
 ]
 
