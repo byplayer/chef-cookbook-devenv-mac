@@ -31,6 +31,8 @@ default['homebrew']['formulas'] = %w[
   packer
   pinentry-mac
   plantuml
+  pyenv-virtualenv
+  pyenv-virtualenvwrapper
   qt
   r
   rbenv
