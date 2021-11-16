@@ -60,6 +60,7 @@ default['homebrew']['casks'] = %w[
   scroll-reverser
   vagrant
   viber
+  vnc-viewer
 ]
 
 default['devenv']['user'] = 'user'
