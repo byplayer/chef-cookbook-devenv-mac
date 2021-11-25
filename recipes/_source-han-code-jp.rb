@@ -15,6 +15,6 @@ bash "install source-han-code-jp #{node['source-han-code-jp']['version']}" do
       rm #{devenv_user_home}/library/fonts/SourceHanCodeJP.ttc
     fi
 
-    cp cache_file_name #{devenv_user_home}/library/fonts/SourceHanCodeJP.ttc
+    cp #{cache_file_name} #{devenv_user_home}/library/fonts/SourceHanCodeJP.ttc
   CODE
 end
