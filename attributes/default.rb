@@ -51,7 +51,6 @@ default['homebrew']['casks'] = %w[
   docker
   ganttproject
   gimp
-  google-japanese-ime
   jiggler
   meld
   rar
