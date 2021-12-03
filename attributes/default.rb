@@ -60,6 +60,7 @@ default['homebrew']['casks'] = %w[
   scroll-reverser
   vagrant
   viber
+  visual-studio-code
   vnc-viewer
 ]
 
