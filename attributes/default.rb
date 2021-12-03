@@ -47,6 +47,7 @@ default['homebrew']['casks'] = %w[
   alfred
   appcleaner
   bartender
+  chef-workstation
   clipy
   docker
   ganttproject
