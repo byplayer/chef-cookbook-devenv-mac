@@ -5,7 +5,6 @@ devenv_user_home = "/Users/#{node['devenv']['user']}"
 %w[.zsh.d
    .emacs.d
    .git-extensions
-   .ruby_tool
    .highlight
    .node_tool].each do |name|
   git "#{devenv_user_home}/#{name}" do
@@ -18,14 +17,6 @@ devenv_user_home = "/Users/#{node['devenv']['user']}"
     enable_submodules true
     action :sync
   end
-end
-
-execute 'install ruby_tool' do
-  environment('HOME' => "/Users/#{node['devenv']['user']}")
-  user node['devenv']['user']
-  command <<-EOH
-    cd ~/.ruby_tool && ./install.sh
-  EOH
 end
 
 # install node_tool

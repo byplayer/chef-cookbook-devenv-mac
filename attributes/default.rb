@@ -82,11 +82,6 @@ default['devenv']['.git-extensions']['ref'] = 'main'
 default['devenv']['.git-extensions']['checkout_branch'] = nil
 default['devenv']['.git-extensions']['enable_checkout'] = false
 
-default['devenv']['.ruby_tool']['repo'] = 'https://github.com/byplayer/ruby_tool.git'
-default['devenv']['.ruby_tool']['ref'] = 'main'
-default['devenv']['.ruby_tool']['checkout_branch'] = nil
-default['devenv']['.ruby_tool']['enable_checkout'] = false
-
 default['devenv']['.highlight']['repo'] = 'https://github.com/byplayer/dot.highlight.git'
 default['devenv']['.highlight']['ref'] = 'main'
 default['devenv']['.highlight']['checkout_branch'] = nil
@@ -132,3 +127,10 @@ default['nvm']['versions'] = []
 default['source-han-code-jp']['base_url'] =
   'https://github.com/adobe-fonts/source-han-code-jp/releases/download/'
 default['source-han-code-jp']['version'] = '2.012R'
+
+# ruby_tool
+default['ruby_tool']['install_path'] = '/opt/ruby_tool'
+default['ruby_tool']['repo'] = 'https://github.com/byplayer/ruby_tool.git'
+default['ruby_tool']['ref'] = 'main'
+default['ruby_tool']['checkout_branch'] = nil
+default['ruby_tool']['enable_checkout'] = false

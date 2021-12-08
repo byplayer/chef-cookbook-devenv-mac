@@ -15,6 +15,7 @@
   universal-ctags
   global
   golang
+  devenv-mac::_ruby_tool
   devenv-mac::_lookup
   devenv-mac::_updatedb
   devenv-mac::_devenv
