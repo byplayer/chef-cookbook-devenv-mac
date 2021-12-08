@@ -9,7 +9,7 @@ end
 
 execute 'install ruby_tool' do
   command <<-END_OF_COMMAND
-    cd node['ruby_tool']['install_path']
+    cd #{node['ruby_tool']['install_path']}
     ./install.sh
   END_OF_COMMAND
 end
