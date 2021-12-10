@@ -18,7 +18,7 @@ node['rbenv']['rubies'].each do |version, gems|
     cmd << "gem install #{gem}\n"
   end
 
-  bash "install ruby(#{version}) by rbenv" do
+  bash "install ruby(#{version}) gems(#{gems.join(',')}) by rbenv" do
     environment('HOME' => "/Users/#{node['rbenv']['user']}")
     user node['rbenv']['user']
     code cmd
