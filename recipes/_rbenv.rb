@@ -6,10 +6,10 @@ node['rbenv']['rubies'].each do |version, gems|
     rbenv versions | grep #{version} > /dev/null
     RES=$?
     if [ $RES -eq 0 ]; then
-      exit 0
+      echo skip install ruby #{version}. It has been installed.
+    else
+      rbenv install #{version}
     fi
-
-    rbenv install #{version}
     rbenv shell #{version}
   EOH
 
