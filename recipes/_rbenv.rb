@@ -2,6 +2,7 @@
 
 node['rbenv']['rubies'].each do |version, gems|
   cmd = <<-EOH
+    export RBENV_ROOT=/opt/rbenv
     eval "$(rbenv init -)" || true
     rbenv versions | grep #{version} > /dev/null
     RES=$?
@@ -19,8 +20,6 @@ node['rbenv']['rubies'].each do |version, gems|
   end
 
   bash "install ruby(#{version}) gems(#{gems.join(',')}) by rbenv" do
-    environment('HOME' => "/Users/#{node['rbenv']['user']}")
-    user node['rbenv']['user']
     code cmd
   end
 end
