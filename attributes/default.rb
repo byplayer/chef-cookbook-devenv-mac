@@ -29,6 +29,7 @@ default['homebrew']['formulas'] = %w[
   nginx
   opencv
   packer
+  pgrep
   pinentry-mac
   plantuml
   pyenv-virtualenv
