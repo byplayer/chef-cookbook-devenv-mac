@@ -97,6 +97,7 @@ end
 %w[
   .gnupg/gpg.conf
   .gnupg/gpg-agent.conf
+  .gnupg/dirmngr.conf
 ].each do |name|
   template "#{devenv_user_home}/#{name}" do
     source "#{name}.erb"
