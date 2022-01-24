@@ -53,6 +53,7 @@ default['homebrew']['casks'] = %w[
   docker
   ganttproject
   gimp
+  iterm2
   jiggler
   meld
   rar
