@@ -123,6 +123,7 @@ default['golang']['owner'] = 'root'
 default['golang']['group'] = 'wheel'
 
 # node
+default['nvm']['version'] = 'v0.39.1'
 default['nvm']['versions'] = []
 
 # source-han-code-jp
