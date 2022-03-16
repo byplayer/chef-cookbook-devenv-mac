@@ -130,7 +130,7 @@ default['asdf']['plugins'] = {
   'ruby' => 'https://github.com/asdf-vm/asdf-ruby.git'
 }
 
-default['asdf']['lang']['nodejs'] = ['v0.39.1']
+default['asdf']['lang']['nodejs'] = ['16.14.1']
 default['asdf']['lang']['ruby'] = ['3.1.0']
 
 # source-han-code-jp
