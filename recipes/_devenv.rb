@@ -179,7 +179,7 @@ node['asdf']['plugins'].each do |p|
     environment({ 'HOME' => devenv_user_home })
     code <<-EOH
       source /usr/local/opt/asdf/libexec/asdf.sh
-      if [ -d ~/~/.asdf/plugins/#{p} ];
+      if [ -d ~/.asdf/plugins/#{p} ]; then
         echo asdf plugin #{p} is already installed
       else
         asdf plugin add #{p} #{node['asdf']['plugins'][p]}
