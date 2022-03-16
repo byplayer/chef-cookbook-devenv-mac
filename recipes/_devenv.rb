@@ -177,6 +177,7 @@ node['asdf']['plugins'].each do |p, url|
     user node['devenv']['user']
     group node['devenv']['group']
     environment({ 'HOME' => devenv_user_home })
+
     code <<-EOH
       source /usr/local/opt/asdf/libexec/asdf.sh
       if [ -d ~/.asdf/plugins/#{p} ]; then
