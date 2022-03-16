@@ -171,6 +171,42 @@ bash 'install nvm' do
   not_if "test -f #{devenv_user_home}/.nvm/nvm.sh"
 end
 
+node['asdf']['plugins'].each do |p|
+  bash "install asdf plugin:#{p}" do
+    cwd devenv_user_home
+    user node['devenv']['user']
+    group node['devenv']['group']
+    environment({ 'HOME' => devenv_user_home })
+    code <<-EOH
+      source /usr/local/opt/asdf/libexec/asdf.sh
+      if [ -d ~/~/.asdf/plugins/#{p} ];
+        echo asdf plugin #{p} is already installed
+      else
+        asdf plugin add #{p} #{node['asdf']['plugins'][p]}
+      fi
+    EOH
+  end
+end
+bash 'install asdf plugins' do
+end
+
+# expect node['asdf']['lang']["#{tool_name}"]["#{version}"]
+node['asdf']['lang'].each do |tool|
+  tool.each do |v|
+    bash "install #{tool} version:#{v}" do
+      cwd devenv_user_home
+      user node['devenv']['user']
+      group node['devenv']['group']
+      environment({ 'HOME' => devenv_user_home })
+
+      code <<-EOH
+        source /usr/local/opt/asdf/libexec/asdf.sh
+        asdf install #{tool} #{v}
+      EOH
+    end
+  end
+end
+
 node['nvm']['versions'].each do |v|
   bash "install node(#{v})" do
     cwd devenv_user_home

@@ -3,6 +3,7 @@
 default['homebrew']['owner'] = 'brew_owner'
 default['homebrew']['taps'] = %w[railwaycat/emacsmacport]
 default['homebrew']['formulas'] = %w[
+  asdf
   aspell
   binutils
   bzip2
@@ -123,9 +124,14 @@ default['updatedb']['opts'] =
 default['golang']['owner'] = 'root'
 default['golang']['group'] = 'wheel'
 
-# node
-default['nvm']['version'] = 'v0.39.1'
-default['nvm']['versions'] = []
+# asdf
+default['asdf']['plugins'] = {
+  'nodejs' => 'https://github.com/asdf-vm/asdf-nodejs.git',
+  'ruby' => 'https://github.com/asdf-vm/asdf-ruby.git'
+}
+
+default['asdf']['lang']['nodejs'] = ['v0.39.1']
+default['asdf']['lang']['ruby'] = ['3.1.0']
 
 # source-han-code-jp
 default['source-han-code-jp']['base_url'] =
