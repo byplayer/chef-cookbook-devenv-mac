@@ -188,8 +188,6 @@ node['asdf']['plugins'].each do |p, url|
     EOH
   end
 end
-bash 'install asdf plugins' do
-end
 
 # expect node['asdf']['lang']["#{tool_name}"]["#{version}"]
 node['asdf']['lang'].each do |lang, versions|
