@@ -171,7 +171,7 @@ bash 'install nvm' do
   not_if "test -f #{devenv_user_home}/.nvm/nvm.sh"
 end
 
-node['asdf']['plugins'].each do |p|
+node['asdf']['plugins'].each do |p, url|
   bash "install asdf plugin:#{p}" do
     cwd devenv_user_home
     user node['devenv']['user']
@@ -182,7 +182,7 @@ node['asdf']['plugins'].each do |p|
       if [ -d ~/.asdf/plugins/#{p} ]; then
         echo asdf plugin #{p} is already installed
       else
-        asdf plugin add #{p} #{node['asdf']['plugins'][p]}
+        asdf plugin add #{p} #{url}
       fi
     EOH
   end
@@ -191,9 +191,9 @@ bash 'install asdf plugins' do
 end
 
 # expect node['asdf']['lang']["#{tool_name}"]["#{version}"]
-node['asdf']['lang'].each do |tool|
-  tool.each do |v|
-    bash "install #{tool} version:#{v}" do
+node['asdf']['lang'].each do |lang, versions|
+  versions.each do |v|
+    bash "install #{lang} version:#{v}" do
       cwd devenv_user_home
       user node['devenv']['user']
       group node['devenv']['group']
@@ -201,24 +201,8 @@ node['asdf']['lang'].each do |tool|
 
       code <<-EOH
         source /usr/local/opt/asdf/libexec/asdf.sh
-        asdf install #{tool} #{v}
+        asdf install #{lang} #{v}
       EOH
     end
-  end
-end
-
-node['nvm']['versions'].each do |v|
-  bash "install node(#{v})" do
-    cwd devenv_user_home
-    user node['devenv']['user']
-    group node['devenv']['group']
-    environment({ 'HOME' => devenv_user_home })
-
-    code <<-EOH
-      source ~/.nvm/nvm.sh
-      nvm install #{v}
-    EOH
-
-    not_if "test -d #{devenv_user_home}/.nvm/versions/node/#{v}"
   end
 end
