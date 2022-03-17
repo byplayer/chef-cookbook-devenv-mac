@@ -6,6 +6,7 @@ default['homebrew']['formulas'] = %w[
   asdf
   aspell
   binutils
+  bison
   bzip2
   clang-format
   cmake
