@@ -134,7 +134,14 @@ end
 
 # expect node['asdf']['lang']["#{tool_name}"]["#{version}"]
 node['asdf']['lang'].each do |lang, versions|
-  versions.each do |v|
+  versions.each do |v, opts|
+    env_val = { 'HOME' => devenv_user_home }
+    if opts
+      opts.each do |k,v|
+        env_val[k] = v
+      end
+    end
+
     bash "install #{lang} version:#{v}" do
       cwd devenv_user_home
       user node['devenv']['user']

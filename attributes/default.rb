@@ -24,7 +24,9 @@ default['homebrew']['formulas'] = %w[
   iproute2mac
   jq
   libgccjit
+  libiconv
   libmaa
+  libzip
   llvm
   logrotate
   midnight-commander
@@ -38,6 +40,7 @@ default['homebrew']['formulas'] = %w[
   pyenv-virtualenvwrapper
   qt
   r
+  re2c
   the_silver_searcher
   tmux
   tree
