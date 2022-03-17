@@ -146,7 +146,7 @@ node['asdf']['lang'].each do |lang, versions|
       cwd devenv_user_home
       user node['devenv']['user']
       group node['devenv']['group']
-      environment({ 'HOME' => devenv_user_home })
+      environment(env_val)
 
       code <<-EOH
         source /usr/local/opt/asdf/libexec/asdf.sh
