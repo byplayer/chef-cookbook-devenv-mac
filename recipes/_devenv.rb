@@ -114,7 +114,7 @@ end
   end
 end
 
-node['asdf']['plugins'].each do |p, url|
+node['asdf']['plugins'].each do |p|
   bash "install asdf plugin:#{p}" do
     cwd devenv_user_home
     user node['devenv']['user']
@@ -126,7 +126,7 @@ node['asdf']['plugins'].each do |p, url|
       if [ -d ~/.asdf/plugins/#{p} ]; then
         echo asdf plugin #{p} is already installed
       else
-        asdf plugin add #{p} #{url}
+        asdf plugin add #{p}
       fi
     EOH
   end
