@@ -114,63 +114,6 @@ end
   end
 end
 
-# for pyenv
-%W[
-  #{devenv_user_home}/.pyenv
-].each do |dir_name|
-  directory dir_name do
-    owner node['devenv']['user']
-    group node['devenv']['group']
-    mode '0755'
-    recursive true
-    action :create
-  end
-end
-
-link "#{devenv_user_home}/.pyenv/bin" do
-  to '/usr/local/opt/pyenv/bin'
-  link_type :symbolic
-end
-
-# sdkman
-bash 'install sdkman' do
-  cwd devenv_user_home
-  user node['devenv']['user']
-  group node['devenv']['group']
-  environment({ 'HOME' => devenv_user_home })
-
-  code <<-EOH
-    curl -s "https://get.sdkman.io" | bash
-  EOH
-  not_if "test -f #{devenv_user_home}/.sdkman/bin/sdkman-init.sh"
-end
-
-# rust environment
-bash 'install rust environment' do
-  cwd devenv_user_home
-  user node['devenv']['user']
-  group node['devenv']['group']
-  environment({ 'HOME' => devenv_user_home })
-
-  code <<-EOH
-    curl https://sh.rustup.rs -sSf | bash -s -- -y --no-modify-path --profile default
-  EOH
-end
-
-# nvm
-bash 'install nvm' do
-  cwd devenv_user_home
-  user node['devenv']['user']
-  group node['devenv']['group']
-  environment({ 'HOME' => devenv_user_home })
-
-  code <<-EOH
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/#{node['nvm']['versions']}/install.sh | bash
-  EOH
-
-  not_if "test -f #{devenv_user_home}/.nvm/nvm.sh"
-end
-
 node['asdf']['plugins'].each do |p, url|
   bash "install asdf plugin:#{p}" do
     cwd devenv_user_home
