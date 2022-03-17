@@ -38,7 +38,6 @@ default['homebrew']['formulas'] = %w[
   pyenv-virtualenvwrapper
   qt
   r
-  rbenv
   the_silver_searcher
   tmux
   tree
