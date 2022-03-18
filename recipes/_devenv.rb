@@ -133,6 +133,19 @@ node['asdf']['plugins'].each do |p|
   end
 end
 
+# update asdf all plugins just in case
+bash 'update asdf all plugins' do
+  cwd devenv_user_home
+  user node['devenv']['user']
+  group node['devenv']['group']
+  environment({ 'HOME' => devenv_user_home })
+
+  code <<-EOH
+      source /usr/local/opt/asdf/libexec/asdf.sh
+      asdf plugin update --all
+  EOH
+end
+
 # expect node['asdf']['lang']["#{tool_name}"]["#{version}"]
 node['asdf']['lang'].each do |lang, versions|
   versions.each do |v, opts|
