@@ -48,6 +48,7 @@ end
 end
 
 %w[
+  .asdfrc
   .config/git/config
   .config/git/commit_template.txt
   .config/mc/mc.keymap
@@ -137,7 +138,7 @@ node['asdf']['lang'].each do |lang, versions|
   versions.each do |v, opts|
     env_val = { 'HOME' => devenv_user_home }
     if opts
-      opts.each do |k,v|
+      opts.each do |k, v|
         env_val[k] = v
       end
     end
