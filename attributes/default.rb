@@ -39,7 +39,6 @@ default['homebrew']['formulas'] = %w[
   pyenv-virtualenv
   pyenv-virtualenvwrapper
   qt
-  r
   re2c
   the_silver_searcher
   tmux
@@ -64,6 +63,7 @@ default['homebrew']['casks'] = %w[
   rar
   rstudio
   qt-creator
+  r
   scroll-reverser
   vagrant
   viber
