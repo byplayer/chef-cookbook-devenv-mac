@@ -16,6 +16,7 @@ default['homebrew']['formulas'] = %w[
   docker
   docker-compose
   emacs-mac
+  exiftool
   findutils
   fzf
   git
