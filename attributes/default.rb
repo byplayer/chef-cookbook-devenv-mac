@@ -22,6 +22,7 @@ default['homebrew']['formulas'] = %w[
   git
   gpg
   highlight
+  imagemagick
   iproute2mac
   jq
   libgccjit
