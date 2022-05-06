@@ -62,6 +62,7 @@ default['homebrew']['casks'] = %w[
   clipy
   docker
   ebmac
+  esolitos/ipa/sshpass
   ganttproject
   gimp
   iterm2
