@@ -69,6 +69,7 @@ default['homebrew']['casks'] = %w[
   qt-creator
   r
   scroll-reverser
+  switchhosts
   vagrant
   viber
   visual-studio-code
