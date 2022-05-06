@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
 default['homebrew']['owner'] = 'brew_owner'
-default['homebrew']['taps'] = %w[railwaycat/emacsmacport]
+default['homebrew']['taps'] = %w[
+  railwaycat/emacsmacport
+  esolitos/ipa
+]
+
 default['homebrew']['formulas'] = %w[
   asdf
   aspell
