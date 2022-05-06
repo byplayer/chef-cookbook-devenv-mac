@@ -27,6 +27,7 @@ default['homebrew']['formulas'] = %w[
   libgccjit
   libiconv
   libmaa
+  libmagic
   libzip
   llvm
   logrotate
