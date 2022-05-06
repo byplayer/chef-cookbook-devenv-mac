@@ -20,6 +20,7 @@ default['homebrew']['formulas'] = %w[
   docker
   docker-compose
   emacs-mac
+  esolitos/ipa/sshpass
   exiftool
   findutils
   fzf
@@ -62,7 +63,6 @@ default['homebrew']['casks'] = %w[
   clipy
   docker
   ebmac
-  esolitos/ipa/sshpass
   ganttproject
   gimp
   iterm2
