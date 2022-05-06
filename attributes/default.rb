@@ -30,6 +30,7 @@ default['homebrew']['formulas'] = %w[
   imagemagick
   iproute2mac
   jq
+  just
   libgccjit
   libiconv
   libmaa
@@ -38,6 +39,7 @@ default['homebrew']['formulas'] = %w[
   llvm
   logrotate
   midnight-commander
+  mutagen-io/mutagen/mutagen-compose
   nginx
   opencv
   packer
