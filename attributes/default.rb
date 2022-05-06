@@ -69,6 +69,7 @@ default['homebrew']['casks'] = %w[
   r
   scroll-reverser
   switchhosts
+  tableplus
   vagrant
   viber
   visual-studio-code
