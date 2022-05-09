@@ -6,7 +6,3 @@ source $HOME/.zsh.d/init.sh
 if [ -f ~/.zsh_local ]; then
   . ~/.zsh_local
 fi
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source $HOME/.sdkman/bin/sdkman-init.sh
