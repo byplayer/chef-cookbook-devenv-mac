@@ -37,6 +37,8 @@ end
   #{devenv_user_home}/.config/git
   #{devenv_user_home}/.config/mc
   #{devenv_user_home}/.gnupg
+  #{devenv_user_home}/.ssh
+  #{devenv_user_home}/.ssh/config.d
 ].each do |dir_name|
   directory dir_name do
     owner node['devenv']['user']
@@ -55,6 +57,8 @@ end
   .dir_colors
   .globalrc
   .prettierrc
+  .ssh/config
+  .ssh/config.d/localhost.conf
   .textlintrc
   .tmux.conf
   .zshenv
