@@ -17,6 +17,7 @@ default['homebrew']['formulas'] = %w[
   cmigemo
   coreutils
   diffutils
+  direnv
   docker
   docker-compose
   emacs-mac
