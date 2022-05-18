@@ -4,16 +4,23 @@ bind C-x send-prefix
 unbind C-b
 
 # status
-set -g status-style fg=black,bg=white
+
 set -g display-time 3000
+
+set-option -g default-terminal screen-256color
+set -g terminal-overrides 'xterm:colors=256'
 
 # command/message line colors
 set -g message-style fg=black,bg=white,bright
-set -g pane-border-style fg=white
-set -g pane-active-border-style fg=white
-# set -g pane-active-border-bg black
+set -g pane-border-style fg=gray
+set -g pane-active-border-style fg=gray
 
-set-window-option -g mode-style fg=black,bg=white
+# set -g status-style fg=black,bg=white
+set -g status-bg colour241
+set -g status-fg white
+
+set -g window-style 'fg=colour254,bg=colour253'
+set -g window-active-style 'fg=colour0,bg=colour15'
 
 # select pane on mouse
 set-option -g mouse on
