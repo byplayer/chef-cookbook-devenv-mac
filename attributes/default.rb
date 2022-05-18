@@ -20,8 +20,6 @@ default['homebrew']['formulas'] = %w[
   direnv
   docker
   docker-compose
-  emacs-mac
-  esolitos/ipa/sshpass
   exiftool
   findutils
   fzf

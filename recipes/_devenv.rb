@@ -3,7 +3,6 @@
 devenv_user_home = "/Users/#{node['devenv']['user']}"
 
 %w[.zsh.d
-   .emacs.d
    .git-extensions
    .highlight
    .node_tool].each do |name|
