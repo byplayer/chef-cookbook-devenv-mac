@@ -19,6 +19,7 @@
 	dw = diff --color-words
 	top = rev-parse --show-toplevel
 	tags = tag -s
+	parent = "!git show-branch | grep '*' | grep -v \"$(git rev-parse --abbrev-ref HEAD)\" | head -n1 | sed 's/.*\\[\\(.*\\)\\].*/\\1/' | sed 's/[\\^~].*//' #"
 [alias "r"]
 	s = remote show
 	p = remote prune

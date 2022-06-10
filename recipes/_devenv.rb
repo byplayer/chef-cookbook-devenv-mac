@@ -81,6 +81,7 @@ end
 
 %w[
   .private_git_conf.sh
+  .loopback.sh
 ].each do |name|
   template "#{devenv_user_home}/#{name}" do
     source "#{name}.erb"
