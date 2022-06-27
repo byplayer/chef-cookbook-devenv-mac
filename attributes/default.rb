@@ -3,6 +3,7 @@
 default['homebrew']['owner'] = 'brew_owner'
 default['homebrew']['taps'] = %w[
   esolitos/ipa
+  mutagen-io/mutagen
 ]
 
 default['homebrew']['formulas'] = %w[
@@ -37,7 +38,7 @@ default['homebrew']['formulas'] = %w[
   llvm
   logrotate
   midnight-commander
-  mutagen-io/mutagen/mutagen-compose
+  mutagen-compose
   nginx
   opencv
   packer
