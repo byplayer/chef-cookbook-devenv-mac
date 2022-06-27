@@ -6,7 +6,7 @@ class Chef
       Chef::DelayedEvaluator.new(&block)
       property :homebrew_path, String,
                describe: 'homebrew path fix version',
-               default: Chef::DelayedEvaluator.new( { "#{HomebrewWrapper.new.install_path}/bin/brew" } )
+               default: Chef::DelayedEvaluator.new { "#{HomebrewWrapper.new.install_path}/bin/brew" }
     end
   end
 end
