@@ -1,15 +1,5 @@
 # frozen_string_literal: true
 
-class Chef
-  class Resource
-    class HomebrewTap < Chef::Resource
-      property :homebrew_path, String,
-               describe: 'homebrew path fix version',
-               default: Chef::DelayedEvaluator.new { "#{HomebrewWrapper.new.install_path}/bin/brew" }
-    end
-  end
-end
-
 include_recipe 'homebrew::install_taps'
 include_recipe 'homebrew::install_formulas'
 include_recipe 'homebrew::install_casks'
