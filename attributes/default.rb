@@ -2,7 +2,6 @@
 
 default['homebrew']['owner'] = 'brew_owner'
 default['homebrew']['taps'] = %w[
-  railwaycat/emacsmacport
   esolitos/ipa
 ]
 
