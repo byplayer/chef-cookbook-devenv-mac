@@ -4,8 +4,8 @@ class Chef
   class Resource
     class HomebrewTap < Chef::Resource
       property :homebrew_path, String,
-        describe "homebrew path fix version",
-        default: lazy { "#{HomebrewWrapper.new.install_path}/bin/brew" }
+               describe: 'homebrew path fix version',
+               default: lazy { "#{HomebrewWrapper.new.install_path}/bin/brew" }
     end
   end
 end
