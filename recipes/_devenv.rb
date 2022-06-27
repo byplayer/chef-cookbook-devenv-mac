@@ -127,7 +127,7 @@ node['asdf']['plugins'].each do |p|
     environment({ 'HOME' => devenv_user_home })
 
     code <<-EOH
-      source /usr/local/opt/asdf/libexec/asdf.sh
+      $(brew --prefix asdf)/libexec/asdf.sh
       if [ -d ~/.asdf/plugins/#{p} ]; then
         echo asdf plugin #{p} is already installed
       else
@@ -145,7 +145,7 @@ bash 'update asdf all plugins' do
   environment({ 'HOME' => devenv_user_home })
 
   code <<-EOH
-      source /usr/local/opt/asdf/libexec/asdf.sh
+      $(brew --prefix asdf)/libexec/asdf.sh
       asdf plugin update --all
   EOH
 end
@@ -167,7 +167,7 @@ node['asdf']['lang'].each do |lang, versions|
       environment(env_val)
 
       code <<-EOH
-        source /usr/local/opt/asdf/libexec/asdf.sh
+        $(brew --prefix asdf)/libexec/asdf.sh
         asdf install #{lang} #{v}
       EOH
     end
