@@ -8,7 +8,6 @@ default['homebrew']['taps'] = %w[
 
 default['homebrew']['formulas'] = %w[
   asdf
-  aspell
   binutils
   bison
   bzip2
@@ -36,23 +35,17 @@ default['homebrew']['formulas'] = %w[
   libmagic
   libzip
   llvm
-  logrotate
   midnight-commander
   mutagen-compose
-  nginx
   opencv
-  packer
   pgrep
   pinentry-mac
   plantuml
-  pyenv-virtualenv
-  pyenv-virtualenvwrapper
   qt
   re2c
   the_silver_searcher
   tmux
   tree
-  virtualenv
   watch
 ]
 
@@ -76,8 +69,6 @@ default['homebrew']['casks'] = %w[
   scroll-reverser
   switchhosts
   tableplus
-  vagrant
-  viber
   visual-studio-code
   vnc-viewer
 ]
@@ -89,11 +80,6 @@ default['devenv']['.zsh.d']['repo'] = 'https://github.com/byplayer/dot.zsh.d.git
 default['devenv']['.zsh.d']['ref'] = 'main'
 default['devenv']['.zsh.d']['checkout_branch'] = nil
 default['devenv']['.zsh.d']['enable_checkout'] = false
-
-default['devenv']['.emacs.d']['repo'] = 'https://github.com/byplayer/dot.emacs.d.git'
-default['devenv']['.emacs.d']['ref'] = 'main'
-default['devenv']['.emacs.d']['checkout_branch'] = nil
-default['devenv']['.emacs.d']['enable_checkout'] = false
 
 default['devenv']['.git-extensions']['repo'] = 'https://github.com/byplayer/git-extensions.git'
 default['devenv']['.git-extensions']['ref'] = 'main'
@@ -121,13 +107,6 @@ default['devenv']['git']['user_email'] = 'devuser@hogehoge.hogehoge'
 
 # gpg
 default['devenv']['gpg'] = {}
-
-# lookup related
-default['eb']['version'] = '4.4.3'
-default['eb']['install_dir'] = '/opt/eb'
-
-default['eblook']['version'] = '1.6.1+media-20150724'
-default['eblook']['install_dir'] = '/opt/eblook'
 
 # updatedb
 default['updatedb']['command'] = '/usr/local/opt/findutils/libexec/gnubin/updatedb'
