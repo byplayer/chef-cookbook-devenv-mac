@@ -3,7 +3,6 @@
 class Chef
   class Resource
     class HomebrewTap < Chef::Resource
-      Chef::DelayedEvaluator.new(&block)
       property :homebrew_path, String,
                describe: 'homebrew path fix version',
                default: Chef::DelayedEvaluator.new { "#{HomebrewWrapper.new.install_path}/bin/brew" }
