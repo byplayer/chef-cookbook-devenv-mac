@@ -56,6 +56,7 @@ default['homebrew']['casks'] = %w[
   chef-workstation
   clipy
   docker
+  firefox
   ebmac
   ganttproject
   gimp
