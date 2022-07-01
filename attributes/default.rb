@@ -68,6 +68,7 @@ default['homebrew']['casks'] = %w[
   qt-creator
   r
   scroll-reverser
+  sourcetree
   switchhosts
   tableplus
   visual-studio-code
