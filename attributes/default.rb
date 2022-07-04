@@ -43,6 +43,7 @@ default['homebrew']['formulas'] = %w[
   plantuml
   qt
   re2c
+  shellcheck
   the_silver_searcher
   tmux
   tree
@@ -56,7 +57,7 @@ default['homebrew']['casks'] = %w[
   chef-workstation
   clipy
   docker
-  firefox
+  firefoxb
   ebmac
   ganttproject
   gimp
