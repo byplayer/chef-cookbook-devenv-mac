@@ -55,7 +55,6 @@ default['homebrew']['casks'] = %w[
   1clipboard
   alfred
   appcleaner
-  bartender
   chef-workstation
   docker
   firefox
