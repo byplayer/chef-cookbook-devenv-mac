@@ -8,6 +8,7 @@ default['homebrew']['taps'] = %w[
 
 default['homebrew']['formulas'] = %w[
   asdf
+  awscli
   binutils
   bison
   bzip2
