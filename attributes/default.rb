@@ -53,6 +53,7 @@ default['homebrew']['formulas'] = %w[
 
 default['homebrew']['casks'] = %w[
   1clipboard
+  adobe-acrobat-reader
   alfred
   appcleaner
   chef-workstation
