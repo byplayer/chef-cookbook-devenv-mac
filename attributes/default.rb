@@ -27,6 +27,7 @@ default['homebrew']['formulas'] = %w[
   gpg
   highlight
   imagemagick
+  imagemagick@6
   iproute2mac
   jq
   just
