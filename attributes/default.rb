@@ -45,6 +45,8 @@ default['homebrew']['formulas'] = %w[
   qt
   re2c
   shellcheck
+  tesseract
+  tesseract-lang
   the_silver_searcher
   tmux
   tree
