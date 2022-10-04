@@ -38,6 +38,7 @@ default['homebrew']['formulas'] = %w[
   llvm
   midnight-commander
   mutagen-compose
+  ocrmypdf
   opencv
   pgrep
   pinentry-mac
