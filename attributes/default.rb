@@ -43,6 +43,7 @@ default['homebrew']['formulas'] = %w[
   pgrep
   pinentry-mac
   plantuml
+  poppler
   qt
   re2c
   shellcheck
