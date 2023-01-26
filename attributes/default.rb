@@ -76,7 +76,6 @@ default['homebrew']['casks'] = %w[
   scroll-reverser
   sourcetree
   switchhosts
-  tableplus
   vipriser
   visual-studio-code
   vnc-viewer
