@@ -16,6 +16,7 @@ default['homebrew']['formulas'] = %w[
   cmake
   cmigemo
   coreutils
+  curlish
   diffutils
   direnv
   docker
@@ -28,6 +29,7 @@ default['homebrew']['formulas'] = %w[
   highlight
   imagemagick@6
   iproute2mac
+  jo
   jq
   just
   libgccjit
