@@ -16,7 +16,6 @@ default['homebrew']['formulas'] = %w[
   cmake
   cmigemo
   coreutils
-  curlish
   diffutils
   direnv
   docker
