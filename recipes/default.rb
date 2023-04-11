@@ -13,9 +13,9 @@
   universal-ctags
   global
   golang
-  devenv-mac::_ruby_tool
   devenv-mac::_updatedb
   devenv-mac::_devenv
+  devenv-mac::_ruby_tool
 ].each do |cookbook|
   include_recipe cookbook
 end
