@@ -54,6 +54,7 @@ default['homebrew']['formulas'] = %w[
   tmux
   tree
   watch
+  zlib
 ]
 
 default['homebrew']['casks'] = %w[
