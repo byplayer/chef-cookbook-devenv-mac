@@ -61,6 +61,7 @@ default['homebrew']['casks'] = %w[
   adobe-acrobat-reader
   alfred
   appcleaner
+  blender
   chef-workstation
   docker
   firefox
