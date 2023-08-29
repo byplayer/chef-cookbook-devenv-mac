@@ -74,7 +74,6 @@ default['homebrew']['casks'] = %w[
   rstudio
   qt-creator
   r
-  scroll-reverser
   sourcetree
   switchhosts
   tableplus
