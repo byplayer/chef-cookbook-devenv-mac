@@ -35,6 +35,7 @@ default['homebrew']['formulas'] = %w[
   libiconv
   libmaa
   libmagic
+  libpq
   libzip
   llvm
   midnight-commander
