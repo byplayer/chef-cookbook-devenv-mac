@@ -39,6 +39,7 @@ default['homebrew']['formulas'] = %w[
   libzip
   llvm
   midnight-commander
+  mkcert
   mutagen-compose
   ocrmypdf
   opencv
