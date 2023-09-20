@@ -35,6 +35,7 @@ end
   #{devenv_user_home}/.config
   #{devenv_user_home}/.config/git
   #{devenv_user_home}/.config/mc
+  #{devenv_user_home}/.config/karabiner
   #{devenv_user_home}/.gnupg
   #{devenv_user_home}/.ssh
   #{devenv_user_home}/.ssh/config.d
@@ -53,6 +54,7 @@ end
   .config/git/config
   .config/git/commit_template.txt
   .config/mc/mc.keymap
+  .config/karabiner/karabiner.json
   .dir_colors
   .globalrc
   .prettierrc
