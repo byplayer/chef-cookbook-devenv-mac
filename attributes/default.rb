@@ -71,6 +71,7 @@ default['homebrew']['casks'] = %w[
   gimp
   iterm2
   jiggler
+  karabiner-elements
   meld
   rar
   rstudio
