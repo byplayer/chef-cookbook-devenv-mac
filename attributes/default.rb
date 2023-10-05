@@ -64,6 +64,7 @@ default['homebrew']['casks'] = %w[
   alfred
   appcleaner
   chef-workstation
+  cyberduck
   docker
   firefox
   ebmac
