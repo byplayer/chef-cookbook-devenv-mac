@@ -66,6 +66,7 @@ default['homebrew']['casks'] = %w[
   chef-workstation
   cyberduck
   docker
+  dotnet
   firefox
   ebmac
   ganttproject
