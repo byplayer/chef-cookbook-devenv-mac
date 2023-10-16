@@ -24,6 +24,7 @@ default['homebrew']['formulas'] = %w[
   findutils
   fzf
   git
+  gnu-time
   gpg
   highlight
   imagemagick@6
@@ -71,7 +72,6 @@ default['homebrew']['casks'] = %w[
   ebmac
   ganttproject
   gimp
-  gnu-time
   iterm2
   jiggler
   karabiner-elements
