@@ -71,6 +71,7 @@ default['homebrew']['casks'] = %w[
   ebmac
   ganttproject
   gimp
+  gnu-time
   iterm2
   jiggler
   karabiner-elements
