@@ -75,6 +75,7 @@ default['homebrew']['casks'] = %w[
   iterm2
   jiggler
   karabiner-elements
+  kicad
   meld
   rar
   rstudio
