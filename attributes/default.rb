@@ -34,6 +34,7 @@ default['homebrew']['formulas'] = %w[
   just
   libgccjit
   libiconv
+  libgit2
   libmaa
   libmagic
   libpq
