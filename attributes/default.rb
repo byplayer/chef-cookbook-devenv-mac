@@ -43,7 +43,6 @@ default['homebrew']['formulas'] = %w[
   midnight-commander
   mkcert
   mutagen-compose
-  ngspice
   ocrmypdf
   opencv
   pgrep
