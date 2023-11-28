@@ -64,6 +64,7 @@ default['homebrew']['casks'] = %w[
   adobe-acrobat-reader
   alfred
   appcleaner
+  arduino-ide
   chef-workstation
   cyberduck
   docker
