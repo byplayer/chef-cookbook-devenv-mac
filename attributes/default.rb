@@ -74,6 +74,7 @@ default['homebrew']['casks'] = %w[
   ebmac
   ganttproject
   gimp
+  inkscape
   iterm2
   jiggler
   karabiner-elements
