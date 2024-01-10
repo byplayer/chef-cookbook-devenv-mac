@@ -25,6 +25,7 @@ default['homebrew']['formulas'] = %w[
   findutils
   fzf
   git
+  git-delta
   gnu-time
   gpg
   highlight
