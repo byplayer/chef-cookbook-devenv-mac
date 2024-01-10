@@ -42,7 +42,7 @@
 	helper = store
 [core]
 	whitespace = cr-at-eol
-	pager = less -x1,5
+	pager = delta --tabs 4
 	hooksPath = git_hooks
 [user]
 	name = <%= @git_user_name %>
@@ -50,29 +50,29 @@
 	signingkey = <%= @git_signing_key %>
 
 [pager]
-  log = diff-highlight | emojify | less
-  show = diff-highlight | less
-  diff = diff-highlight | less
+	log = delta | emojify | less
 
 [diff]
-  tool = meld
-  compactionHeuristic = true
+	colorMoved = default
+	tool = meld
+	compactionHeuristic = true
 
 [difftool]
-  prompt = false
+	prompt = false
 
 [difftool "meld"]
-  cmd = meld "$LOCAL" "$REMOTE"
+	cmd = meld "$LOCAL" "$REMOTE"
 
 [merge]
     tool = meld
     keepBackup = false
 
 [mergetool "meld"]
-  cmd = meld "$LOCAL" "$BASE" "$REMOTE"
-  keepTemporaries = false
-  trustExitCode = false
-  keepBackup = false
+	cmd = meld "$LOCAL" "$BASE" "$REMOTE"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+
 [gpg]
 	program = gpg
 [commit]
@@ -82,3 +82,10 @@
 	rebase = false
 [init]
 	defaultBranch = main
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true    # use n and N to move between diff sections
+	light = true      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
