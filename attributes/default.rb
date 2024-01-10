@@ -21,6 +21,7 @@ default['homebrew']['formulas'] = %w[
   docker
   docker-compose
   exiftool
+  expect
   eza
   findutils
   fzf
