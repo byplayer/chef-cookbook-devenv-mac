@@ -59,6 +59,7 @@ default['homebrew']['formulas'] = %w[
   tesseract-lang
   the_silver_searcher
   tmux
+  trash
   tree
   watch
   zlib
