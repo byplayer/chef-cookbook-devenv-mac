@@ -51,6 +51,7 @@ end
 
 %w[
   .asdfrc
+  .clang-format
   .config/git/config
   .config/git/commit_template.txt
   .config/mc/mc.keymap
