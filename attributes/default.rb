@@ -72,6 +72,7 @@ default['homebrew']['casks'] = %w[
   arduino-ide
   chef-workstation
   cyberduck
+  disk-inventory-x
   docker
   dotnet
   firefox
