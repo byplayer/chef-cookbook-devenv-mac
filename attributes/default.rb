@@ -81,9 +81,7 @@ default['homebrew']['casks'] = %w[
   gimp
   inkscape
   iterm2
-  jiggler
   karabiner-elements
-  kicad
   meld
   rar
   rstudio
