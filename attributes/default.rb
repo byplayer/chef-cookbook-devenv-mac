@@ -20,6 +20,7 @@ default['homebrew']['formulas'] = %w[
   direnv
   docker
   docker-compose
+  doxygen
   exiftool
   expect
   eza
