@@ -44,6 +44,7 @@ default['homebrew']['formulas'] = %w[
   libpq
   libzip
   llvm
+  make
   midnight-commander
   mkcert
   mutagen-compose
