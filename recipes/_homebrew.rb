@@ -11,7 +11,7 @@ node['homebrew']['casks'].each do |name|
 end
 
 # g++ link
-Dir.glob("#{HomebrewWrapper.new.homebrew_path}/gcc/bin/g++*") do |f|
+Dir.glob("#{HomebrewWrapper.new.homebrew_path}/opt/gcc/bin/g++*") do |f|
   bash 'create g++ symlink' do
     code <<-EOH
       ln -s #{f} #{HomebrewWrapper.new.homebrew_path}/gcc/bin/g++
