@@ -26,7 +26,6 @@ default['homebrew']['formulas'] = %w[
   eza
   findutils
   fzf
-  gdb
   git
   git-delta
   gnu-time
