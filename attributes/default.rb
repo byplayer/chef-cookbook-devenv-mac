@@ -76,7 +76,6 @@ default['homebrew']['casks'] = %w[
   disk-inventory-x
   docker
   dotnet
-  firefox
   ebmac
   ganttproject
   gimp
@@ -85,10 +84,7 @@ default['homebrew']['casks'] = %w[
   karabiner-elements
   meld
   rar
-  rstudio
   qt-creator
-  r
-  sourcetree
   switchhosts
   tableplus
   vipriser
