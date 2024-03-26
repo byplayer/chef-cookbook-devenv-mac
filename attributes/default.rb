@@ -73,7 +73,6 @@ default['homebrew']['casks'] = %w[
   appcleaner
   arduino-ide
   chef-workstation
-  cyberduck
   disk-inventory-x
   docker
   dotnet
