@@ -82,6 +82,7 @@ default['homebrew']['casks'] = %w[
   inkscape
   iterm2
   karabiner-elements
+  kicad
   meld
   rar
   qt-creator
