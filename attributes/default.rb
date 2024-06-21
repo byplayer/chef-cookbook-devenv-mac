@@ -79,6 +79,7 @@ default['homebrew']['casks'] = %w[
   ebmac
   ganttproject
   gimp
+  hiddenbar
   inkscape
   iterm2
   karabiner-elements
