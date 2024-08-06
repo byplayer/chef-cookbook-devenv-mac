@@ -77,6 +77,7 @@ default['homebrew']['casks'] = %w[
   docker
   dotnet
   ebmac
+  font-cascadia-mono-nf
   ganttproject
   gimp
   hiddenbar
