@@ -45,6 +45,8 @@ default['homebrew']['formulas'] = %w[
   libzip
   llvm
   make
+  mecab
+  mecab-ipadic
   midnight-commander
   mkcert
   mutagen-compose
