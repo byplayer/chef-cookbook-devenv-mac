@@ -55,7 +55,6 @@ default['homebrew']['formulas'] = %w[
   pgrep
   pinentry-mac
   plantuml
-  platformio
   poppler
   qt
   re2c
