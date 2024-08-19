@@ -75,6 +75,7 @@ default['homebrew']['casks'] = %w[
   alfred
   appcleaner
   arduino-ide
+  azure-data-studio
   chef-workstation
   disk-inventory-x
   docker
