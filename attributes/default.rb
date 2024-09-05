@@ -3,7 +3,6 @@
 default['homebrew']['owner'] = 'brew_owner'
 default['homebrew']['taps'] = %w[
   esolitos/ipa
-  mutagen-io/mutagen
 ]
 
 default['homebrew']['formulas'] = %w[
@@ -50,7 +49,6 @@ default['homebrew']['formulas'] = %w[
   mecab-ipadic
   midnight-commander
   mkcert
-  mutagen-compose
   ocrmypdf
   opencv
   pgrep
