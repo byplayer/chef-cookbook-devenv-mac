@@ -95,6 +95,7 @@ default['homebrew']['casks'] = %w[
   vipriser
   visual-studio-code
   vnc-viewer
+  webots
 ]
 
 default['devenv']['user'] = 'user'
