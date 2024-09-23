@@ -58,6 +58,7 @@ default['homebrew']['formulas'] = %w[
   qt
   re2c
   shellcheck
+  swiftlint
   tesseract
   tesseract-lang
   the_silver_searcher
