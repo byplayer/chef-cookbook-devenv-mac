@@ -3,6 +3,7 @@
 default['homebrew']['owner'] = 'brew_owner'
 default['homebrew']['taps'] = %w[
   esolitos/ipa
+  railwaycat/emacsmacport
 ]
 
 default['homebrew']['formulas'] = %w[
@@ -20,6 +21,7 @@ default['homebrew']['formulas'] = %w[
   docker
   docker-compose
   doxygen
+  emacs-mac
   exiftool
   expect
   eza
