@@ -104,6 +104,11 @@ default['homebrew']['casks'] = %w[
 default['devenv']['user'] = 'user'
 default['devenv']['group'] = 'group'
 
+default['devenv']['.emacs.d']['repo'] = 'https://github.com/byplayer/dot.emacs.d.git'
+default['devenv']['.emacs.d']['ref'] = 'main'
+default['devenv']['.emacs.d']['checkout_branch'] = nil
+default['devenv']['.emacs.d']['enable_checkout'] = false
+
 default['devenv']['.zsh.d']['repo'] = 'https://github.com/byplayer/dot.zsh.d.git'
 default['devenv']['.zsh.d']['ref'] = 'main'
 default['devenv']['.zsh.d']['checkout_branch'] = nil
