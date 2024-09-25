@@ -21,7 +21,6 @@ default['homebrew']['formulas'] = %w[
   docker
   docker-compose
   doxygen
-  emacs-mac
   exiftool
   expect
   eza
@@ -82,6 +81,7 @@ default['homebrew']['casks'] = %w[
   docker
   dotnet
   ebmac
+  emacs-mac-spacemacs-icon
   font-cascadia-code-nf
   ganttproject
   gimp
