@@ -77,6 +77,7 @@ default['homebrew']['casks'] = %w[
   arduino-ide
   azure-data-studio
   chef-workstation
+  discord
   disk-inventory-x
   docker
   dotnet
