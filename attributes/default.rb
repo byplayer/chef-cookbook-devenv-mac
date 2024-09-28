@@ -29,6 +29,7 @@ default['homebrew']['formulas'] = %w[
   gdbm
   git
   git-delta
+  git-lfs
   gnu-time
   gpg
   highlight
