@@ -144,7 +144,7 @@ default['devenv']['git']['user_email'] = 'devuser@hogehoge.hogehoge'
 default['devenv']['gpg'] = {}
 
 # updatedb
-default['updatedb']['command'] = '/usr/local/opt/findutils/libexec/gnubin/updatedb'
+default['updatedb']['command'] = '/opt/homebrew/opt/findutils/libexec/gnubin/updatedb'
 default['updatedb']['opts'] =
   '--prunepaths=\'/Users/*/Box /Users/*/Library /Users/*/.emacs.d/backup /Users/*/.emacs.d/undohist /Users/*/.emacs.d/undo-tree-hist /Users/*/.rbenv /Users/*/.nvm /Users/*/.chef /Users/*/.gem /Users/*/.go /Users/*/.gradle /Users/*/.inspect /Users/*/.bundle /Users/*/.npm /Users/*/.pyenv /Users/*/.sdkman /Users/*/.ruby_tool /Users/*/.berkshelf /Users/*/.node_tool /Users/*/.cargo /Users/*/.rustup /Users/*/chef /Users/*/.asdf /Users/startupuser\' --localpaths=/Users'
 
