@@ -3,7 +3,6 @@
 default['homebrew']['owner'] = 'brew_owner'
 default['homebrew']['taps'] = %w[
   esolitos/ipa
-  railwaycat/emacsmacport
 ]
 
 default['homebrew']['formulas'] = %w[
@@ -83,7 +82,6 @@ default['homebrew']['casks'] = %w[
   docker
   dotnet
   ebmac
-  emacs-mac-spacemacs-icon
   font-cascadia-code-nf
   ganttproject
   gimp
@@ -105,11 +103,6 @@ default['homebrew']['casks'] = %w[
 
 default['devenv']['user'] = 'user'
 default['devenv']['group'] = 'group'
-
-default['devenv']['.emacs.d']['repo'] = 'https://github.com/byplayer/dot.emacs.d.git'
-default['devenv']['.emacs.d']['ref'] = 'main'
-default['devenv']['.emacs.d']['checkout_branch'] = nil
-default['devenv']['.emacs.d']['enable_checkout'] = false
 
 default['devenv']['.zsh.d']['repo'] = 'https://github.com/byplayer/dot.zsh.d.git'
 default['devenv']['.zsh.d']['ref'] = 'main'
