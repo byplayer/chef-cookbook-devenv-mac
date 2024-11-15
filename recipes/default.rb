@@ -13,7 +13,6 @@
   universal-ctags
   global
   golang
-  devenv-mac::_updatedb
   devenv-mac::_devenv
   devenv-mac::_ruby_tool
 ].each do |cookbook|
